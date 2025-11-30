@@ -1,0 +1,14 @@
+{
+    "navbar": {
+        "resume": "Currículo",
+        "about": "Sobre",
+        "projects": "Projetos",
+        "contact": "Contato",
+        "menu": "Menu",
+        "toggleTheme": "Alternar tema",
+        "switchLanguageToEnglish": "Mudar para inglês",
+        "switchLanguageToPortuguese": "Mudar para português do Brasil",
+        "languageShortEn": "EN",
+        "languageShortPt": "PT-BR"
+    }
+}

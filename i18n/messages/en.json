@@ -1,0 +1,14 @@
+{
+    "navbar": {
+        "resume": "Resume",
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact",
+        "menu": "Menu",
+        "toggleTheme": "Toggle theme",
+        "switchLanguageToEnglish": "Switch to English",
+        "switchLanguageToPortuguese": "Switch to Brazilian Portuguese",
+        "languageShortEn": "EN",
+        "languageShortPt": "PT-BR"
+    }
+}

@@ -1,0 +1,112 @@
+"use client"
+import { useIsMobile } from "@/hooks/use-mobile.hook"
+import { Link, usePathname, useRouter } from "@/i18n/routing"
+import { cn } from "@/lib/utils"
+import { Moon01FreeIcons, Sun01FreeIcons } from "@hugeicons/core-free-icons"
+import type { IconSvgElement } from "@hugeicons/react"
+import { useLocale, useTranslations } from "next-intl"
+import { useTheme } from "next-themes"
+import dynamic from "next/dynamic"
+import { useMemo } from "react"
+
+type NavbarIcon = string | IconSvgElement
+
+export type NavbarItem = {
+    name?: string
+    icon?: NavbarIcon
+    onClick?: () => void
+    href?: string
+    srLabel?: string
+}
+
+const DynamicDesktop = dynamic(() => import("./desktop"), {
+    ssr: false,
+})
+const DynamicMobile = dynamic(() => import("./mobile"), {
+    ssr: false,
+})
+
+export default function Navbar() {
+    const t = useTranslations("navbar")
+    const { theme, setTheme } = useTheme()
+    const isMobile = useIsMobile()
+    const locale = useLocale()
+    const pathname = usePathname()
+    const router = useRouter()
+    const menuLabel = t("menu")
+    const toggleThemeLabel = t("toggleTheme")
+    const switchToEnglishLabel = t("switchLanguageToEnglish")
+    const switchToPortugueseLabel = t("switchLanguageToPortuguese")
+
+    const primaryItems = useMemo<NavbarItem[]>(
+        () => [
+            {
+                name: t("about"),
+                href: "#about",
+            },
+            {
+                name: t("projects"),
+                href: "#projects",
+            },
+            {
+                name: t("resume"),
+                href: "#resume",
+            },
+            {
+                name: t("contact"),
+                href: "#contact",
+            },
+        ],
+        [t]
+    )
+
+    const actionItems = useMemo<NavbarItem[]>(
+        () => {
+            const nextLocale = locale === "en" ? "pt-br" : "en"
+            const currentLanguageShortLabel = locale === "en" ? t("languageShortEn") : t("languageShortPt")
+
+            return [
+                {
+                    name: currentLanguageShortLabel,
+                    icon: locale === "en" ? "/united-states.png" : "/brazil.png",
+                    onClick: () => router.replace(pathname, { locale: nextLocale }),
+                    srLabel: locale === "en" ? switchToPortugueseLabel : switchToEnglishLabel,
+                },
+                {
+                    icon: theme === "light" ? Moon01FreeIcons : Sun01FreeIcons,
+                    onClick: () => setTheme(theme === "light" ? "dark" : "light"),
+                    srLabel: toggleThemeLabel,
+                },
+            ]
+        },
+        [locale, pathname, router, setTheme, switchToEnglishLabel, switchToPortugueseLabel, theme, toggleThemeLabel, t]
+    )
+
+    return (
+        <header
+            className={cn(
+                "fixed left-0 top-0 z-50 w-full",
+                "bg-transparent backdrop-blur-[3px]",
+                "py-6"
+            )}
+            style={{
+                backgroundImage: "radial-gradient(var(--background) 1px, transparent 1px)",
+                backgroundSize: "4px 4px",
+                mask: "linear-gradient(to bottom, black calc(90%), transparent 100%)",
+                WebkitMask: "linear-gradient(to bottom, black calc(100% - 50px), transparent 100%)",
+                WebkitBackdropFilter: "blur(3px)",
+            }}
+        >
+            <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-10">
+                <Link href="/" className="text-3xl font-semibold tracking-tight sm:text-3xl">
+                    Fábio Miguel
+                </Link>
+                {isMobile ? (
+                    <DynamicMobile items={[...primaryItems, ...actionItems]} menuLabel={menuLabel} />
+                ) : (
+                    <DynamicDesktop links={primaryItems} actions={actionItems} />
+                )}
+            </div>
+        </header>
+    )
+}
