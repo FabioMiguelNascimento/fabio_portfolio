@@ -85,7 +85,7 @@ export default function Navbar() {
     return (
         <header
             className={cn(
-                "fixed left-0 top-0 z-50 w-full",
+                "sticky top-0 z-50 w-full",
                 "bg-transparent backdrop-blur-[3px]",
                 "py-6"
             )}
@@ -97,7 +97,7 @@ export default function Navbar() {
                 WebkitBackdropFilter: "blur(3px)",
             }}
         >
-            <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-10">
+            <div className="mx-auto flex w-full  items-center justify-between gap-4 ">
                 <Link href="/" className="text-3xl font-semibold tracking-tight sm:text-3xl">
                     Fábio Miguel
                 </Link>

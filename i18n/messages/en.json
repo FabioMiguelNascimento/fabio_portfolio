@@ -10,5 +10,19 @@
         "switchLanguageToPortuguese": "Switch to Brazilian Portuguese",
         "languageShortEn": "EN",
         "languageShortPt": "PT-BR"
+    },
+    "hero": {
+        "greeting": {
+            "part_one": "Hello",
+            "part_two": "my name is"
+        },
+        "name": "Fábio Miguel",
+        "role": "Full Stack Developer",
+        "hover": "Hover me!",
+        "touch": "Touch me!",
+        "buttons": {
+            "resume": "Resume",
+            "contact": "Contact"
+        }
     }
 }

@@ -10,5 +10,19 @@
         "switchLanguageToPortuguese": "Mudar para português do Brasil",
         "languageShortEn": "EN",
         "languageShortPt": "PT-BR"
+    },
+    "hero": {
+        "greeting": {
+            "part_one": "Olá",
+            "part_two": "me chamo"
+        },
+        "name": "Fábio Miguel",
+        "role": "Desenvolvedor Full Stack",
+        "hover": "Passe o mouse em mim!",
+        "touch": "Toque em mim!",
+        "buttons": {
+            "resume": "Currículo",
+            "contact": "Contato"
+        }
     }
 }
