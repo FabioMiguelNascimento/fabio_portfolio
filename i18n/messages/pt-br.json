@@ -23,6 +23,7 @@
         "buttons": {
             "resume": "Currículo",
             "contact": "Contato"
-        }
+        },
+        "tech_title": "Minha Stack"
     }
 }

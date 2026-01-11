@@ -23,6 +23,7 @@
         "buttons": {
             "resume": "Resume",
             "contact": "Contact"
-        }
+        },
+        "tech_title": "My Stack"
     }
 }
