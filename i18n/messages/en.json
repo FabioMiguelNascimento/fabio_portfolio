@@ -18,8 +18,7 @@
         },
         "name": "Fábio Miguel",
         "role": "Full Stack Developer",
-        "hover": "Hover me!",
-        "touch": "Touch me!",
+        "view_skills": "View skills",
         "buttons": {
             "resume": "Resume",
             "contact": "Contact"

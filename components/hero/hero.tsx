@@ -1,10 +1,10 @@
 "use client";
 import { useIsMobile } from "@/hooks/use-mobile.hook";
 import {
-  Contact01FreeIcons,
-  File01FreeIcons,
-  Github01FreeIcons,
-  Linkedin01FreeIcons,
+    Contact01FreeIcons,
+    File01FreeIcons,
+    Github01FreeIcons,
+    Linkedin01FreeIcons,
 } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { useTranslations } from "next-intl";
@@ -19,7 +19,7 @@ import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
 export default function Hero() {
   const t = useTranslations("hero");
   const isMobile = useIsMobile();
-  const text = isMobile ? t("touch") : t("hover");
+  const text = t("view_skills");
 
   const skills = [
     { icon: SiTypescript, name: "Typescript" },

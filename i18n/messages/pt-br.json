@@ -18,8 +18,7 @@
         },
         "name": "Fábio Miguel",
         "role": "Desenvolvedor Full Stack",
-        "hover": "Passe o mouse em mim!",
-        "touch": "Toque em mim!",
+        "view_skills": "Ver habilidades",
         "buttons": {
             "resume": "Currículo",
             "contact": "Contato"
