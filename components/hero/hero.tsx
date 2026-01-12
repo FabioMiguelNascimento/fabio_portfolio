@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import { HeroButtons } from "./hero-buttons";
 import { HeroSkillsPopover } from "./hero-skills-popover";
+import Emoji from "./emoji";
 
 export default async function Hero() {
   const t = await getTranslations("hero");
@@ -15,14 +16,9 @@ export default async function Hero() {
         <div className="mr-auto">
           <div className="title-row">
             <p className="flex gap-2 flex-row nowrap items-start justify-start">
-              {t("greeting.part_one")}{" "}
-              <Image
-                src="/emoji.png"
-                className="emoji"
-                width={16}
-                height={16}
-                alt="emoji"
-              />{" "}
+              {t("greeting.part_one")}
+              <Emoji />
+              {" "}
               {t("greeting.part_two")}
             </p>
             <p className="font-bold text-5xl">{t("name")}</p>
