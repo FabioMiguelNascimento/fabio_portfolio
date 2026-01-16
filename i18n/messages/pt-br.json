@@ -25,6 +25,10 @@
         },
         "tech_title": "Minha Stack"
     },
+    "status": {
+        "open": "Disponível para trabalho",
+        "unavailable": "Indisponível"
+    },
     "resume": {
         "header": {
             "title": "Currículo",

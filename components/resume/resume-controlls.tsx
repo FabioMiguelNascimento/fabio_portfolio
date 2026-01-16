@@ -20,7 +20,7 @@ export default function ResumeControlls(
           {downloadLabel}
         </Button>
       </a>
-      <Button variant="ghost" size="icon" onClick={() => onOpenChange(false)}>
+      <Button data-slot="sheet-close" variant="ghost" size="icon" onClick={() => onOpenChange(false)}>
         <HugeiconsIcon icon={Cancel01FreeIcons} />
         <span className="sr-only">Fechar</span>
       </Button>

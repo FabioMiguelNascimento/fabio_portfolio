@@ -25,6 +25,10 @@
         },
         "tech_title": "My Stack"
     },
+    "status": {
+        "open": "Open to work",
+        "unavailable": "Unavailable"
+    },
     "resume": {
         "header": {
             "title": "Resume",

@@ -1,4 +1,5 @@
 "use client"
+import { StatusButton } from "@/components/ui/status-button"
 import { useIsMobile } from "@/hooks/use-mobile.hook"
 import { Link, usePathname, useRouter } from "@/i18n/routing"
 import { cn } from "@/lib/utils"
@@ -101,6 +102,9 @@ export default function Navbar() {
                 <Link href="/" className="text-3xl font-semibold tracking-tight sm:text-3xl">
                     Fábio Miguel
                 </Link>
+                <div className="hidden sm:flex items-center gap-4">
+                  <StatusButton />
+                </div>
                 {isMobile ? (
                     <DynamicMobile items={[...primaryItems, ...actionItems]} menuLabel={menuLabel} />
                 ) : (

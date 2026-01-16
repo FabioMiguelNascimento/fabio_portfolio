@@ -33,7 +33,7 @@ export default function ExperienceSection({
             <div className="flex-1">
               <div className="flex items-start gap-4 mb-2 flex-wrap">
                 <h4 className="text-lg font-semibold mr-4">{item.role}</h4>
-                <span className="inline-flex items-center justify-center whitespace-nowrap min-w-[6rem] px-3 py-1 text-xs rounded-full bg-accent text-accent-foreground">{item.period ?? ""}</span>
+                <span className="inline-flex items-center justify-center whitespace-nowrap min-w-24 px-3 py-1 text-xs rounded-full bg-accent text-accent-foreground">{item.period ?? ""}</span>
               </div>
               <p className="text-primary/80 mb-2">{item.company}</p>
               <ul className="list-disc list-inside space-y-1 text-sm">

@@ -1,3 +1,4 @@
+import { StatusButton } from "@/components/ui/status-button";
 import { SheetHeader } from "../ui/sheet";
 import ResumeControlls from "./resume-controlls";
 
@@ -11,7 +12,8 @@ export default function ResumeHeader({
 }) {
     return(
         <SheetHeader className="ml-auto">
-          <div className="flex gap-2">
+          <div className="flex items-center gap-4">
+            <StatusButton />
             <ResumeControlls downloadLabel={downloadLabel} onOpenChange={onOpenChange} />
           </div>
         </SheetHeader>
