@@ -24,5 +24,88 @@
             "contact": "Contato"
         },
         "tech_title": "Minha Stack"
+    },
+    "resume": {
+        "header": {
+            "title": "Currículo",
+            "download": "Download Currículo",
+            "file": "/Curriculo_Fabio_Miguel_Nascimento.pdf"
+        },
+        "role": "Desenvolvedor Full Stack",
+        "summary": "Desenvolvedor Full Stack com foco na construção de sistemas escaláveis, plataformas SaaS e automação. Experiência em NestJS, Node.js, filas (RabbitMQ), WebSockets e práticas de engenharia de software (Clean Architecture, DDD).",
+        "experience": {
+            "title": "Experiência",
+            "items": [
+                {
+                    "role": "Desenvolvedor Web / CRM",
+                    "company": "Allinsys",
+                    "period": "Ago/2024 - Ago/2025",
+                    "extension": "jpg",
+                    "responsibilities": [
+                        "Entreguei <strong>funcionalidades críticas</strong> em sistema de CRM, garantindo <strong>100% de compatibilidade</strong> com código legado e reduzindo riscos de regressão.",
+                        "Liderei a gestão de repositórios Git e processos de <strong>Code Review</strong> para aumentar qualidade e consistência do código.",
+                        "Refatorei módulos legados (jQuery → <strong>ES6+</strong>), melhorando performance, tempo de carregamento e manutenibilidade.",
+                        "Modernizei a interface com <strong>SCSS</strong> e arquitetura modular de componentes para acelerar evolução visual do produto."
+                    ]
+                },
+                {
+                    "role": "Suporte Técnico Nível 2",
+                    "company": "ParanhanaNet",
+                    "period": "Mar/2023 - Nov/2023",
+                    "extension": "png",
+                    "responsibilities": [
+                        "Gerenciei <strong>30+ chamados críticos por dia</strong>, garantindo operação contínua de clientes corporativos.",
+                        "Reduzi o Tempo Médio de Atendimento (TMA) em <strong>20%</strong> criando scripts de diagnóstico em Bash/Linux.",
+                        "Mantive <strong>CSAT acima de 95%</strong> na resolução de incidentes complexos de redes e fibra óptica."
+                    ]
+                }
+            ]
+        },
+        "projects": {
+            "title": "Projetos de Destaque",
+            "items": [
+                {
+                    "name": "BizzConnect (SaaS de Mensageria Multi-tenant)",
+                    "period": "Em desenvolvimento",
+                    "description": "Plataforma para gestão de atendimentos via WhatsApp. Arquitetura multi-tenant, filas (RabbitMQ), cache (Redis) e suporte a 500+ conexões simultâneas via WebSockets.",
+                    "highlights": [
+                        "Arquitetura escalável preparada para 500+ conexões concorrentes.",
+                        "Processamento assíncrono com RabbitMQ e cache Redis, reduzindo latência para <200ms.",
+                        "Estruturado com NestJS, Next.js, PostgreSQL e Docker, com testes automatizados e foco em IA futura."
+                    ]
+                },
+                {
+                    "name": "Brave/Gemini CLI (Open Source)",
+                    "period": "Projeto Open Source",
+                    "description": "CLI para análise automática de vagas com suporte a LLMs.",
+                    "highlights": [
+                        "Automatiza a extração e análise de requisitos de vagas, reduzindo até 90% do tempo de triagem manual."
+                    ]
+                }
+            ]
+        },
+        "skills": {
+            "title": "Habilidades",
+            "backend": ["Node.js", "NestJS", "PostgreSQL"],
+            "frontend": ["TypeScript", "React", "Next.js"],
+            "infra": ["Docker", "Redis"],
+            "ai": ["LLMs"],
+            "other": ["Clean Architecture", "DDD"]
+        },
+        "education": {
+            "title": "Educação",
+            "items": [
+                {
+                    "course": "Análise e Desenvolvimento de Sistemas",
+                    "institution": "Senac RS",
+                    "period": "2022 - 2024"
+                },
+                {
+                    "course": "Sistemas para Internet",
+                    "institution": "FACCAT - Faculdades Integradas de Taquara/RS",
+                    "period": "2023 - 2027"
+                }
+            ]
+        }
     }
 }

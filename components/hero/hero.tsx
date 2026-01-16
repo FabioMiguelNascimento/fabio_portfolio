@@ -1,8 +1,8 @@
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
+import Emoji from "./emoji";
 import { HeroButtons } from "./hero-buttons";
 import { HeroSkillsPopover } from "./hero-skills-popover";
-import Emoji from "./emoji";
 
 export default async function Hero() {
   const t = await getTranslations("hero");

@@ -8,6 +8,8 @@ import {
 } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
 import Link from "next/link";
+import { useState } from "react";
+import { ResumeModal } from "../resume/resume-modal";
 import { Button } from "../ui/button";
 
 type HeroButtonsProps = {
@@ -15,7 +17,12 @@ type HeroButtonsProps = {
   resumeLabel: string;
 };
 
-export function HeroButtons({ contactLabel, resumeLabel }: HeroButtonsProps) {
+export function HeroButtons({
+  contactLabel,
+  resumeLabel,
+}: HeroButtonsProps) {
+  const [isResumeModalOpen, setIsResumeModalOpen] = useState(false);
+
   return (
     <div className="flex w-full items-start justify-start gap-2 flex-wrap">
       <Link href="https://github.com/FabioMiguelNascimento" target="_blank">
@@ -49,9 +56,15 @@ export function HeroButtons({ contactLabel, resumeLabel }: HeroButtonsProps) {
         variant="outline"
         size="sm"
         className="inline-flex gap-2 items-center justify-center"
+        onClick={() => setIsResumeModalOpen(true)}
       >
         <HugeiconsIcon icon={File01FreeIcons} /> {resumeLabel}
       </Button>
+
+      <ResumeModal
+        open={isResumeModalOpen}
+        onOpenChange={setIsResumeModalOpen}
+      />
     </div>
   );
 }

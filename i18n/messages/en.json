@@ -24,5 +24,88 @@
             "contact": "Contact"
         },
         "tech_title": "My Stack"
+    },
+    "resume": {
+        "header": {
+            "title": "Resume",
+            "download": "Download",
+            "file": "/Resume_Fabio_Miguel_Nascimento.pdf"
+        },
+        "role": "Full Stack Developer",
+        "summary": "Junior Full Stack Developer with strong backend orientation and practical experience building scalable, AI-ready systems. Experience in NestJS, Node.js, messaging queues, WebSockets, and strong software engineering practices (Clean Architecture, DDD).",
+        "experience": {
+            "title": "Experience",
+            "items": [
+                {
+                    "role": "Web Developer / CRM",
+                    "company": "Allinsys",
+                    "period": "Aug/2024 - Aug/2025",
+                    "extension": "jpg",
+                    "responsibilities": [
+                        "Developed and maintained <strong>critical CRM features</strong>, ensuring <strong>100% compatibility</strong> with legacy code and reducing regression risk.",
+                        "Led Git repository organization and structured <strong>code reviews</strong> to improve code quality and maintainability.",
+                        "Refactored legacy frontend modules (jQuery → <strong>ES6+</strong>), improving performance and maintainability.",
+                        "Modernized UI architecture using <strong>SCSS</strong> and modular components."
+                    ]
+                },
+                {
+                    "role": "Level 2 Technical Support Engineer",
+                    "company": "ParanhanaNet",
+                    "period": "Mar/2023 - Nov/2023",
+                    "extension": "png",
+                    "responsibilities": [
+                        "Handled <strong>30+ critical incidents daily</strong>, supporting enterprise clients with high availability needs.",
+                        "Reduced MTTR by <strong>20%</strong> via diagnostic and automation scripts (Bash/Linux).",
+                        "Maintained <strong>CSAT above 95%</strong> when resolving complex network and fiber incidents."
+                    ]
+                }
+            ]
+        },
+        "projects": {
+            "title": "Academic & Personal Projects",
+            "items": [
+                {
+                    "name": "BizzConnect — Multi-tenant Messaging SaaS",
+                    "period": "In Progress",
+                    "description": "End-to-end platform for WhatsApp-based customer communication and automation, designed for scale and resilience.",
+                    "highlights": [
+                        "Designed to support 500+ concurrent WebSocket connections.",
+                        "Asynchronous processing with RabbitMQ and Redis cache to keep average latency <200ms.",
+                        "AI-assisted workflows planned for message categorization and response suggestions."
+                    ]
+                },
+                {
+                    "name": "Brave/Gemini CLI Extension",
+                    "period": "Open Source",
+                    "description": "CLI tool for AI-powered job description analysis and automation.",
+                    "highlights": [
+                        "Automates job requirement parsing using LLMs, reducing manual screening time by up to 90%."
+                    ]
+                }
+            ]
+        },
+        "skills": {
+            "title": "Skills",
+            "backend": ["Node.js", "NestJS", "PostgreSQL"],
+            "frontend": ["TypeScript", "React", "Next.js"],
+            "infra": ["Docker", "Redis"],
+            "ai": ["LLMs"],
+            "other": ["Clean Architecture", "DDD"]
+        },
+        "education": {
+            "title": "Education",
+            "items": [
+                {
+                    "course": "Systems Analysis and Development",
+                    "institution": "Senac RS",
+                    "period": "2022 - 2024"
+                },
+                {
+                    "course": "Internet Systems",
+                    "institution": "FACCAT - Integrated Colleges of Taquara/RS",
+                    "period": "2023 - 2027"
+                }
+            ]
+        }
     }
 }

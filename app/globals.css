@@ -182,3 +182,41 @@
     padding-inline: var(--page-inline-padding);
   }
 }
+
+/* Skills Grid Spotlight Effect */
+.skills-grid:hover .skill-item::before {
+  opacity: 0.5;
+}
+
+.skill-item {
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+}
+
+.skill-item::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: calc(var(--radius) + 2px);
+  padding: 2px;
+  background: radial-gradient(
+    200px circle at var(--mouse-x) var(--mouse-y),
+    var(--primary),
+    transparent 40%
+  );
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 200ms ease;
+}
+
+.skill-item:hover::before {
+  opacity: 1;
+  background: radial-gradient(
+    400px circle at var(--mouse-x) var(--mouse-y),
+    var(--primary),
+    transparent 40%
+  );
+}
