@@ -33,7 +33,7 @@
         "header": {
             "title": "Currículo",
             "download": "Download Currículo",
-            "file": "/Curriculo_Fabio_Miguel_Nascimento.pdf"
+            "file": "/resumes/Curriculo_Fabio_Miguel_Nascimento.pdf"
         },
         "role": "Desenvolvedor Full Stack",
         "summary": "Desenvolvedor Full Stack com foco na construção de sistemas escaláveis, plataformas SaaS e automação. Experiência em NestJS, Node.js, filas (RabbitMQ), WebSockets e práticas de engenharia de software (Clean Architecture, DDD).",

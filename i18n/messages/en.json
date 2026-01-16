@@ -33,7 +33,7 @@
         "header": {
             "title": "Resume",
             "download": "Download",
-            "file": "/Resume_Fabio_Miguel_Nascimento.pdf"
+            "file": "/resumes/Resume_Fabio_Miguel_Nascimento.pdf"
         },
         "role": "Full Stack Developer",
         "summary": "Junior Full Stack Developer with strong backend orientation and practical experience building scalable, AI-ready systems. Experience in NestJS, Node.js, messaging queues, WebSockets, and strong software engineering practices (Clean Architecture, DDD).",

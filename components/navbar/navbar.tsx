@@ -69,7 +69,7 @@ export default function Navbar() {
             return [
                 {
                     name: currentLanguageShortLabel,
-                    icon: locale === "en" ? "/united-states.png" : "/brazil.png",
+                    icon: locale === "en" ? "/icons/united-states.png" : "/icons/brazil.png",
                     onClick: () => router.replace(pathname, { locale: nextLocale }),
                     srLabel: locale === "en" ? switchToPortugueseLabel : switchToEnglishLabel,
                 },
