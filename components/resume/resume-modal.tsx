@@ -18,7 +18,7 @@ export function ResumeModal({
 
   return (
     <Sheet open={open} onOpenChange={onOpenChange} modal>
-      <SheetContent side="right" className="inset-0 left-0 right-0 w-screen max-w-none border-0 flex flex-col overflow-hidden h-screen p-8 pt-2 sm:p-12 sm:pt-2 [&>button:first-of-type]:hidden" style={{ width: '100vw', maxWidth: 'none' }} >
+      <SheetContent side="right" className="inset-0 left-0 right-0 w-screen max-w-none border-0 flex flex-col overflow-hidden h-screen p-4 sm:p-6 [&>button:first-of-type]:hidden" style={{ width: '100vw', maxWidth: 'none' }} >
         <ResumeHeader
           title={t("header.title")}
           downloadLabel={t("header.download")}

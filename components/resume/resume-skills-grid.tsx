@@ -68,17 +68,17 @@ export function ResumeSkillsGrid() {
   return (
     <div
       ref={gridRef}
-      className="skills-grid grid grid-rows-[repeat(2,minmax(0,1fr))] grid-flow-col auto-cols-[minmax(140px,1fr)] gap-3"
+      className="skills-grid grid gap-3 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 auto-rows-fr"
     >
       {list.map((name) => {
         const Icon = ICONS[name];
         return (
           <div
             key={name}
-            className="skill-item relative flex items-center justify-center gap-2 rounded-lg border bg-accent/50 p-3 text-sm transition-transform h-full min-h-[3.25rem]"
+            className="skill-item relative flex items-center justify-start gap-2 rounded-lg border bg-accent/50 p-2 text-sm transition-transform min-h-10 max-w-full"
           >
-            {Icon ? <Icon className="h-5 w-5" /> : null}
-            <span>{name}</span>
+            {Icon ? <Icon className="h-4 w-4 shrink-0 text-muted-foreground" /> : null}
+            <span className="truncate">{name}</span>
           </div>
         );
       })}

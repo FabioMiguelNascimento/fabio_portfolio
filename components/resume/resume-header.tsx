@@ -11,10 +11,12 @@ export default function ResumeHeader({
     onOpenChange: (open: boolean) => void;
 }) {
     return(
-        <SheetHeader className="ml-auto">
-          <div className="flex items-center gap-4">
+        <SheetHeader className="w-full">
+          <div className="flex items-center gap-4 w-full justify-start sm:justify-end">
             <StatusButton />
-            <ResumeControlls downloadLabel={downloadLabel} onOpenChange={onOpenChange} />
+            <div className="ml-auto sm:ml-0">
+              <ResumeControlls downloadLabel={downloadLabel} onOpenChange={onOpenChange} />
+            </div>
           </div>
         </SheetHeader>
     )
