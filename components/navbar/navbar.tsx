@@ -8,7 +8,7 @@ import type { IconSvgElement } from "@hugeicons/react"
 import { useLocale, useTranslations } from "next-intl"
 import { useTheme } from "next-themes"
 import dynamic from "next/dynamic"
-import { useMemo } from "react"
+import { useEffect, useMemo, useState } from "react"
 
 type NavbarIcon = string | IconSvgElement
 
@@ -38,6 +38,31 @@ export default function Navbar() {
     const toggleThemeLabel = t("toggleTheme")
     const switchToEnglishLabel = t("switchLanguageToEnglish")
     const switchToPortugueseLabel = t("switchLanguageToPortuguese")
+
+    const [showCompactTitle, setShowCompactTitle] = useState(false)
+
+    useEffect(() => {
+        if (!isMobile) {
+            setShowCompactTitle(false)
+            return
+        }
+
+        const title = document.getElementById("hero-title")
+
+        if (!title) {
+            setShowCompactTitle(true)
+            return
+        }
+
+        const obs = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                setShowCompactTitle(!entry.isIntersecting)
+            })
+        }, { threshold: 0.5 })
+
+        obs.observe(title)
+        return () => obs.disconnect()
+    }, [isMobile, pathname])
 
     const primaryItems = useMemo<NavbarItem[]>(
         () => [
@@ -100,7 +125,8 @@ export default function Navbar() {
         >
             <div className="mx-auto flex w-full  items-center justify-between gap-4 ">
                 <Link href="/" className="text-3xl font-semibold tracking-tight sm:text-3xl">
-                    Fábio Miguel
+                    <span className="hidden sm:inline">Fábio Miguel</span>
+                    <span className={`inline-block sm:hidden transform transition-all duration-300 ease-out ${showCompactTitle ? 'translate-y-0 opacity-100' : '-translate-y-3 opacity-0'}`} aria-hidden={!showCompactTitle}>FM</span>
                 </Link>
                 <div className="hidden sm:flex items-center gap-4">
                   <StatusButton />

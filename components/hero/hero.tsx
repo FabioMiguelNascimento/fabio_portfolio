@@ -21,7 +21,7 @@ export default async function Hero() {
               {" "}
               {t("greeting.part_two")}
             </p>
-            <p className="font-bold text-5xl">{t("name")}</p>
+            <p id="hero-title" className="font-bold text-5xl">{t("name")}</p>
           </div>
           <HeroSkillsPopover
             role={t("role")}
