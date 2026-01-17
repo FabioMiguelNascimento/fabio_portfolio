@@ -26,7 +26,7 @@ export function HeroButtons({
   const closeResume = useResumeStore((s) => s.closeResume);
 
   return (
-    <div className="flex w-full items-start justify-start gap-2 flex-wrap">
+    <div className="flex w-full items-center justify-center gap-2 flex-wrap md:items-start md:justify-start">
       <Link href="https://github.com/FabioMiguelNascimento" target="_blank">
         <Button
           variant="outline"
