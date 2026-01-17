@@ -13,16 +13,38 @@ export default function DesktopNavbar({ links, actions }: DesktopNavbarProps) {
     return (
         <div className="flex items-center gap-3">
             <nav className="flex items-center gap-1">
-                {links.map((item) => (
-                    <Button
-                        key={item.href}
-                        asChild
-                        variant="ghost"
-                        size="sm"
-                        className="text-sm font-medium"
-                    >
-                        <Link href={item.href ?? "#"}>{item.name}</Link>
-                    </Button>
+                {links.map((item, index) => (
+                    item.onClick ? (
+                        <Button
+                            key={item.name ?? `link-${index}`}
+                            variant="ghost"
+                            size="sm"
+                            className="text-sm font-medium"
+                            onClick={item.onClick}
+                        >
+                            {item.name}
+                        </Button>
+                    ) : item.href ? (
+                        <Button
+                            key={item.href}
+                            asChild
+                            variant="ghost"
+                            size="sm"
+                            className="text-sm font-medium"
+                        >
+                            <Link href={item.href ?? "#"}>{item.name}</Link>
+                        </Button>
+                    ) : (
+                        <Button
+                            key={item.name ?? `link-${index}`}
+                            variant="ghost"
+                            size="sm"
+                            className="text-sm font-medium"
+                            onClick={item.onClick}
+                        >
+                            {item.name}
+                        </Button>
+                    )
                 ))}
             </nav>
             <div className="flex items-center gap-1">

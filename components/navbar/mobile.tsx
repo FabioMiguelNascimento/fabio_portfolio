@@ -66,6 +66,21 @@ export default function MobileNavbar({ items, menuLabel }: MobileNavbarProps) {
                                 </>
                             )
 
+                            if (item.onClick) {
+                                return (
+                                    <Button
+                                        key={key}
+                                        variant="ghost"
+                                        size="lg"
+                                        onClick={handleSelect}
+                                        aria-label={ariaLabel}
+                                        className={buttonClass}
+                                    >
+                                        {content}
+                                    </Button>
+                                )
+                            }
+
                             if (item.href) {
                                 return (
                                     <Button

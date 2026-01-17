@@ -22,7 +22,6 @@ export function ResumeModal({
         <ResumeHeader
           title={t("header.title")}
           downloadLabel={t("header.download")}
-          onOpenChange={onOpenChange}
         />
         <ResumeContent />
       </SheetContent>

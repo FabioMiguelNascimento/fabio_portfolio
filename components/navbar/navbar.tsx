@@ -1,6 +1,7 @@
 "use client"
 import { StatusButton } from "@/components/ui/status-button"
 import { useIsMobile } from "@/hooks/use-mobile.hook"
+import { useResumeStore } from "@/hooks/use-resume-store"
 import { Link, usePathname, useRouter } from "@/i18n/routing"
 import { cn } from "@/lib/utils"
 import { Moon01FreeIcons, Sun01FreeIcons } from "@hugeicons/core-free-icons"
@@ -63,7 +64,7 @@ export default function Navbar() {
         obs.observe(title)
         return () => obs.disconnect()
     }, [isMobile, pathname])
-
+    
     const primaryItems = useMemo<NavbarItem[]>(
         () => [
             {
@@ -76,7 +77,7 @@ export default function Navbar() {
             },
             {
                 name: t("resume"),
-                href: "#resume",
+                onClick: () => useResumeStore.getState().openResume(),
             },
             {
                 name: t("contact"),
