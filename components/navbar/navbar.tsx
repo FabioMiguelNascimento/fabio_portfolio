@@ -43,11 +43,6 @@ export default function Navbar() {
     const [showCompactTitle, setShowCompactTitle] = useState(false)
 
     useEffect(() => {
-        if (!isMobile) {
-            setShowCompactTitle(false)
-            return
-        }
-
         const title = document.getElementById("hero-title")
 
         if (!title) {
@@ -63,8 +58,8 @@ export default function Navbar() {
 
         obs.observe(title)
         return () => obs.disconnect()
-    }, [isMobile, pathname])
-    
+    }, [pathname])
+
     const primaryItems = useMemo<NavbarItem[]>(
         () => [
             {
@@ -126,8 +121,8 @@ export default function Navbar() {
         >
             <div className="mx-auto flex w-full  items-center justify-between gap-4 ">
                 <Link href="/" className="text-3xl font-semibold tracking-tight sm:text-3xl">
-                    <span className="hidden sm:inline">Fábio Miguel</span>
-                    <span className={`inline-block sm:hidden transform transition-all duration-300 ease-out ${showCompactTitle ? 'translate-y-0 opacity-100' : '-translate-y-3 opacity-0'}`} aria-hidden={!showCompactTitle}>FM</span>
+                    <span className={`hidden sm:inline-block transition-transform duration-300 ease-out ${showCompactTitle ? 'translate-y-0 opacity-100' : '-translate-y-3 opacity-0'}`}>Fábio Miguel</span>
+                    <span className={`inline-block sm:hidden transition-transform duration-300 ease-out ${showCompactTitle ? 'translate-y-0 opacity-100' : '-translate-y-3 opacity-0'}`} aria-hidden={!showCompactTitle}>FM</span>
                 </Link>
                 <div className="hidden sm:flex items-center gap-4">
                   <StatusButton />
