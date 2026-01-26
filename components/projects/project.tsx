@@ -7,7 +7,7 @@ import Link from "next/link";
 import React from "react";
 import { FiBook, FiExternalLink, FiGithub } from "react-icons/fi";
 import { IconType } from "react-icons/lib";
-import { SiAxios, SiChartdotjs, SiCloudflare, SiFirebase, SiMarkdown, SiMongodb, SiMui, SiNextdotjs, SiNodedotjs, SiPostgresql, SiPrisma, SiReact, SiRedis, SiSass, SiSocketdotio, SiTailwindcss } from "react-icons/si";
+import { SiAxios, SiChartdotjs, SiCloudflare, SiDocker, SiFirebase, SiMarkdown, SiMongodb, SiMui, SiNestjs, SiNextdotjs, SiNodedotjs, SiPostgresql, SiPrisma, SiRabbitmq, SiReact, SiRedis, SiSass, SiSocketdotio, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { TbDevices } from "react-icons/tb";
 import { Badge } from "../ui/badge";
 import { Button, buttonVariants } from "../ui/button";
@@ -18,7 +18,7 @@ const Project = React.forwardRef<HTMLButtonElement, ProjectProps & React.ButtonH
 
   const iconMap: Record<string, IconType | IconSvgElement> = {
     SiReact,
-    SiSass,
+    SiTypescript,
     Motion01Icon,
     SiFirebase,
     SiMarkdown,
@@ -29,6 +29,9 @@ const Project = React.forwardRef<HTMLButtonElement, ProjectProps & React.ButtonH
     SiCloudflare,
     CloudFreeIcons,
     SiAxios,
+    SiNestjs,
+    SiRabbitmq,
+    SiDocker,
     TbDevices,
     SiNextdotjs,
     SiPrisma,

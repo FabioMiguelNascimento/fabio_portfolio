@@ -1,16 +1,16 @@
-import { Project } from "@/components/projects/project";
+import { Project } from "@/components/projects/types";
 
 export const projects: Project[] = [
   {
     id: "portfolio",
-    title: "Portfolio Pessoal",
-    description: "Site pessoal desenvolvido com React e SCSS, apresentando projetos, habilidades e experiências de forma interativa e responsiva.",
     image: "/images/projects/portfolio.png",
     releaseDate: "2025",
     tags: [
       { name: "React", iconKey: "SiReact" },
-      { name: "SCSS", iconKey: "SiSass" },
-      { name: "Framer Motion", iconKey: "Motion01Icon" },
+      { name: "TypeScript", iconKey: "SiTypescript" },
+      { name: "Tailwind CSS", iconKey: "SiTailwindcss" },
+      { name: "Prisma", iconKey: "SiPrisma" },
+      { name: "Next.js", iconKey: "SiNextdotjs" },
     ],
     links: {
       demo: "https://portfolio-fabio-miguel.vercel.app/",
@@ -19,8 +19,6 @@ export const projects: Project[] = [
   },
   {
     id: "version_logger",
-    title: "Version Logger",
-    description: "Aplicação pessoal que permite criar e compartilhar registros em formato Markdown através de URLs, facilitando a documentação e compartilhamento de informações.",
     image: "/images/projects/ais-update.png",
     releaseDate: "2024",
     tags: [
@@ -33,19 +31,17 @@ export const projects: Project[] = [
       demo: "https://ais-update.vercel.app",
     },
   },
-  {
+{
     id: "bizzconnect",
-    title: "Bizzconnect",
-    description: "Aplicativo de rede social para profissionais, com recursos de mensagens, grupos e compartilhamento de conteúdo. Utilize de todos os meios de comunicação atuais para se conectar com seus colegas/clientes.",
     image: "/images/projects/bizzconnect.png",
     releaseDate: "2026",
     tags: [
-      { name: "React", iconKey: "SiReact" },
+      { name: "Next.js", iconKey: "SiNextdotjs" },
+      { name: "NestJS", iconKey: "SiNestjs" },
+      { name: "RabbitMQ", iconKey: "SiRabbitmq" },
       { name: "Redis", iconKey: "SiRedis" },
-      { name: "Node.js", iconKey: "SiNodedotjs" },
-      { name: "MongoDB", iconKey: "SiMongodb" },
-      { name: "Socket.io", iconKey: "SiSocketdotio" },
-      { name: "Cloudflare Storage", iconKey: "SiCloudflare" },
+      { name: "Prisma", iconKey: "SiPrisma" },
+      { name: "Docker", iconKey: "SiDocker" },
     ],
     links: {
       demo: "https://bizzconnect-nu.vercel.app/pt-BR",
@@ -53,8 +49,6 @@ export const projects: Project[] = [
   },
   {
     id: "weather_app",
-    title: "Weather App",
-    description: "Aplicativo de previsão do tempo com geolocalização e alertas meteorológicos.",
     image: "/images/projects/weather-app.png",
     releaseDate: "2024",
     tags: [
@@ -70,8 +64,6 @@ export const projects: Project[] = [
   },
   {
     id: "portfolio_maya",
-    title: "Portfolio Maya",
-    description: "Portfolio profissional desenvolvido para minha esposa, apresentando seus trabalhos e experiências de forma elegante e responsiva.",
     image: "/images/projects/maya-portfolio.png",
     releaseDate: "2024",
     tags: [
@@ -87,8 +79,6 @@ export const projects: Project[] = [
   },
   {
     id: "blog_platform",
-    title: "Blog Platform",
-    description: "Plataforma de blog com editor rich text, sistema de comentários e painel do autor.",
     image: "",
     releaseDate: "2025",
     tags: [
@@ -104,8 +94,6 @@ export const projects: Project[] = [
   },
   {
     id: "dashboard_admin",
-    title: "Dashboard Admin",
-    description: "Painel administrativo com visualização de dados em tempo real, gráficos interativos e gerenciamento de usuários.",
     image: "",
     releaseDate: "2023",
     tags: [

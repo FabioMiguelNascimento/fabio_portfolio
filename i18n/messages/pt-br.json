@@ -127,20 +127,13 @@
                 "title": "Portfolio Pessoal",
                 "description": "Site pessoal desenvolvido com React e SCSS, apresentando projetos, habilidades e experiências de forma interativa e responsiva."
             },
-            "project": {
-                "links": {
-                    "demo": "Demo",
-                    "repository": "Repositório",
-                    "doc": "Docs"
-                }
-            },
             "version_logger": {
                 "title": "Version logger",
                 "description": "Aplicação pessoal que permite criar e compartilhar registros em formato Markdown através de URLs, facilitando a documentação e compartilhamento de informações."
             },
             "bizzconnect": {
                 "title": "Bizzconnect",
-                "description": "Aplicativo de rede social para profissionais, com recursos de mensagens, grupos e compartilhamento de conteúdo. Utilize de todos os meios de comunicação atuais para se conectar com seus colegas/clientes."
+                "description": "SaaS multi-tenant de mensageria e automação. Centralize canais de atendimento, gerencie filas complexas e escale operações com arquitetura baseada em microsserviços e eventos."
             },
             "weather_app": {
                 "title": "Weather App",

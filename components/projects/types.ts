@@ -5,8 +5,6 @@ export interface Tag {
 
 export interface Project {
   id: string;
-  title: string;
-  description: string;
   tags: Tag[];
   image: string;
   releaseDate: string;
@@ -17,6 +15,7 @@ export interface Project {
   };
 }
 
+// Principalmente textos traduzidos
 export interface Metadata {
   title: string;
   description: string;

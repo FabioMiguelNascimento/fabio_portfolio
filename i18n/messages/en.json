@@ -127,20 +127,13 @@
                 "title": "Personal Portfolio",
                 "description": "Personal website built with React and SCSS, showcasing projects, skills and experiences interactively and responsively."
             },
-            "project": {
-                "links": {
-                    "demo": "Demo",
-                    "repository": "Repository",
-                    "doc": "Docs"
-                }
-            },
             "version_logger": {
                 "title": "Version Logger",
-                "description": "Personal app that allows creating and sharing Markdown records via URLs, facilitating documentation and sharing."
+                "description": "A personal application that allows creating and sharing Markdown-formatted logs via URLs, facilitating documentation and information sharing."
             },
             "bizzconnect": {
                 "title": "Bizzconnect",
-                "description": "Social network app for professionals with messaging, groups and content sharing features. Use all current communication channels to connect with colleagues and clients."
+                "description": "Multi-tenant messaging and automation SaaS. Centralize communication channels, manage complex queues, and scale operations with microservices-based architecture and events."
             },
             "weather_app": {
                 "title": "Weather App",
