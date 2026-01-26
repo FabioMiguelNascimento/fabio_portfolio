@@ -1,5 +1,6 @@
 import Hero from "@/components/hero/hero";
 import Navbar from "@/components/navbar/navbar";
+import Projects from "@/components/projects/projects";
 import { routing } from "@/i18n/routing";
 import { setRequestLocale } from "next-intl/server";
 
@@ -19,7 +20,10 @@ export default async function Home({ params }: Props) {
   return (
     <main>
       <Navbar />
-      <Hero />
+      <main className="space-y-24 sm:space-y-8">
+        <Hero />
+        <Projects />
+      </main>
     </main>
   );
 }

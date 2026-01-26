@@ -16,6 +16,13 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Fábio Miguel Nascimento - Portfolio",
   description: "Portfolio and Resume of Fábio Miguel Nascimento, a Full Stack Developer specializing in building scalable and efficient web applications.",
+  viewport: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no",
+  other: {
+    "mobile-web-app-capable": "yes",
+    "apple-mobile-web-app-capable": "yes",
+    "apple-mobile-web-app-status-bar-style": "default",
+    "format-detection": "telephone=no"
+  }
 };
 
 export default function RootLayout({

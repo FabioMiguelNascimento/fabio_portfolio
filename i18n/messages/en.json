@@ -111,5 +111,53 @@
                 }
             ]
         }
+    },
+    "projects": {
+        "header": {
+            "title": "Projects",
+            "subtitle": "Recent projects showcasing my technical skills."
+        },
+        "links": {
+            "demo": "Demo",
+            "repository": "Repository",
+            "doc": "Docs"
+        },
+        "items": {
+            "portfolio": {
+                "title": "Personal Portfolio",
+                "description": "Personal website built with React and SCSS, showcasing projects, skills and experiences interactively and responsively."
+            },
+            "project": {
+                "links": {
+                    "demo": "Demo",
+                    "repository": "Repository",
+                    "doc": "Docs"
+                }
+            },
+            "version_logger": {
+                "title": "Version Logger",
+                "description": "Personal app that allows creating and sharing Markdown records via URLs, facilitating documentation and sharing."
+            },
+            "bizzconnect": {
+                "title": "Bizzconnect",
+                "description": "Social network app for professionals with messaging, groups and content sharing features. Use all current communication channels to connect with colleagues and clients."
+            },
+            "weather_app": {
+                "title": "Weather App",
+                "description": "Weather forecast app with geolocation, interactive maps and weather alerts."
+            },
+            "portfolio_maya": {
+                "title": "Maya Portfolio",
+                "description": "Professional portfolio built for my wife, showcasing her work and experience elegantly and responsively."
+            },
+            "blog_platform": {
+                "title": "Blog Platform",
+                "description": "Blog platform with a rich text editor, comments system and author dashboard."
+            },
+            "dashboard_admin": {
+                "title": "Dashboard Admin",
+                "description": "Admin panel with real-time data visualization, interactive charts and user management."
+            }
+        }
     }
 }

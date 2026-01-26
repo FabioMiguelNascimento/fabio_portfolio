@@ -111,5 +111,53 @@
                 }
             ]
         }
+    },
+    "projects": {
+        "header": {
+            "title": "Projetos",
+            "subtitle": "Projetos recentes que demonstram minhas habilidades técnicas."
+        },
+        "links": {
+            "demo": "Demo",
+            "repository": "Repositório",
+            "doc": "Docs"
+        },
+        "items": {
+            "portfolio": {
+                "title": "Portfolio Pessoal",
+                "description": "Site pessoal desenvolvido com React e SCSS, apresentando projetos, habilidades e experiências de forma interativa e responsiva."
+            },
+            "project": {
+                "links": {
+                    "demo": "Demo",
+                    "repository": "Repositório",
+                    "doc": "Docs"
+                }
+            },
+            "version_logger": {
+                "title": "Version logger",
+                "description": "Aplicação pessoal que permite criar e compartilhar registros em formato Markdown através de URLs, facilitando a documentação e compartilhamento de informações."
+            },
+            "bizzconnect": {
+                "title": "Bizzconnect",
+                "description": "Aplicativo de rede social para profissionais, com recursos de mensagens, grupos e compartilhamento de conteúdo. Utilize de todos os meios de comunicação atuais para se conectar com seus colegas/clientes."
+            },
+            "weather_app": {
+                "title": "Weather App",
+                "description": "Aplicativo de previsão do tempo com geolocalização, mapas interativos e alertas meteorológicos."
+            },
+            "portfolio_maya": {
+                "title": "Portfolio Maya",
+                "description": "Portfolio profissional desenvolvido para minha esposa, apresentando seus trabalhos e experiências de forma elegante e responsiva."
+            },
+            "blog_platform": {
+                "title": "Blog Platform",
+                "description": "Plataforma de blog com editor rich text, sistema de comentários e painel do autor."
+            },
+            "dashboard_admin": {
+                "title": "Dashboard Admin",
+                "description": "Painel administrativo com visualização de dados em tempo real, gráficos interativos e gerenciamento de usuários."
+            }
+        }
     }
 }
