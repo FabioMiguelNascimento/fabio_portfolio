@@ -1,16 +1,13 @@
 "use client"
 
+import getIconComponent from "@/components/icons";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { CloudFreeIcons, Motion01Icon } from "@hugeicons/core-free-icons";
-import { HugeiconsIcon, IconSvgElement } from "@hugeicons/react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { FiBook, FiExternalLink, FiGithub } from "react-icons/fi";
-import { IconType } from "react-icons/lib";
-import { SiAxios, SiChartdotjs, SiCloudflare, SiFirebase, SiMarkdown, SiMongodb, SiMui, SiNextdotjs, SiNodedotjs, SiPostgresql, SiPrisma, SiReact, SiRedis, SiSass, SiSocketdotio, SiTailwindcss } from "react-icons/si";
-import { TbDevices } from "react-icons/tb";
+
 
 interface SerializableProject {
   id: string;
@@ -38,39 +35,6 @@ interface Props {
 export default function ProjectDialogBody({ project, metadata }: Props) {
   const t = useTranslations("projects");
 
-  const iconMap: Record<string, IconType | IconSvgElement> = {
-    SiReact,
-    SiSass,
-    Motion01Icon,
-    SiFirebase,
-    SiMarkdown,
-    SiRedis,
-    SiNodedotjs,
-    SiMongodb,
-    SiSocketdotio,
-    SiCloudflare,
-    CloudFreeIcons,
-    SiAxios,
-    TbDevices,
-    SiNextdotjs,
-    SiPrisma,
-    SiPostgresql,
-    SiTailwindcss,
-    SiChartdotjs,
-    SiMui,
-  };
-
-  const getIconComponent = (iconKey: string) => {
-    const icon = iconMap[iconKey];
-    if (!icon) return null;
-
-    if (typeof icon === "function") {
-      const IconComp = icon as IconType;
-      return <IconComp />;
-    } else {
-      return <HugeiconsIcon icon={icon as IconSvgElement} />;
-    }
-  };
 
   return (
     <div className="space-y-2">

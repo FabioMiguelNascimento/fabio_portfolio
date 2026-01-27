@@ -1,14 +1,11 @@
 "use client"
 
+import getIconComponent from "@/components/icons";
 import { cn } from "@/lib/utils";
-import { CloudFreeIcons, Motion01Icon } from "@hugeicons/core-free-icons";
-import { HugeiconsIcon, IconSvgElement } from "@hugeicons/react";
 import Link from "next/link";
 import React from "react";
 import { FiBook, FiExternalLink, FiGithub } from "react-icons/fi";
-import { IconType } from "react-icons/lib";
-import { SiAxios, SiChartdotjs, SiCloudflare, SiDocker, SiFirebase, SiMarkdown, SiMongodb, SiMui, SiNestjs, SiNextdotjs, SiNodedotjs, SiPostgresql, SiPrisma, SiRabbitmq, SiReact, SiRedis, SiSass, SiSocketdotio, SiTailwindcss, SiTypescript } from "react-icons/si";
-import { TbDevices } from "react-icons/tb";
+
 import { Badge } from "../ui/badge";
 import { Button, buttonVariants } from "../ui/button";
 
@@ -16,42 +13,7 @@ import type { Project, ProjectProps } from "./types";
 
 const Project = React.forwardRef<HTMLButtonElement, ProjectProps & React.ButtonHTMLAttributes<HTMLButtonElement>>(function Project({ project, metadata, ...props }, ref) {
 
-  const iconMap: Record<string, IconType | IconSvgElement> = {
-    SiReact,
-    SiTypescript,
-    Motion01Icon,
-    SiFirebase,
-    SiMarkdown,
-    SiRedis,
-    SiNodedotjs,
-    SiMongodb,
-    SiSocketdotio,
-    SiCloudflare,
-    CloudFreeIcons,
-    SiAxios,
-    SiNestjs,
-    SiRabbitmq,
-    SiDocker,
-    TbDevices,
-    SiNextdotjs,
-    SiPrisma,
-    SiPostgresql,
-    SiTailwindcss,
-    SiChartdotjs,
-    SiMui,
-  };
 
-  const getIconComponent = (iconKey: string) => {
-    const icon = iconMap[iconKey];
-    if (!icon) return null;
-
-    if (typeof icon === "function") {
-      const IconComp = icon as IconType;
-      return <IconComp />;
-    } else {
-      return <HugeiconsIcon icon={icon as IconSvgElement} />;
-    }
-  };
 
   return (
     <button ref={ref} {...props} type="button" className="flex gap-2 flex-col py-4 w-full text-left">
