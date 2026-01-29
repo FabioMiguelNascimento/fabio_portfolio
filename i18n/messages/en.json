@@ -152,5 +152,23 @@
                 "description": "Admin panel with real-time data visualization, interactive charts and user management."
             }
         }
+    },
+    "stamps": {
+        "header": {
+            "title": "Stamps",
+            "subtitle": "Leave your mark — choose a stamp and place it anywhere on the canvas"
+        },
+        "actions": {
+            "select": "Select stamp",
+            "place": "Place stamp"
+        },
+        "instructions": {
+            "drag": "Drag a stamp onto the canvas or click to place it",
+            "clickToPlace": "Click on the canvas to place the selected stamp"
+        },
+        "empty": {
+            "title": "No stamps yet",
+            "description": "Select a stamp from the list to start placing marks"
+        }
     }
 }

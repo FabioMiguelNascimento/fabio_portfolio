@@ -7,18 +7,11 @@ datasource db {
   provider = "postgresql"
 }
 
-enum Types {
-  ICON
-  EMOJI
-  TEXT
-}
-
 model Stamp {
   id String @id @default(uuid()) @db.Uuid
+  stampId String
   x Int @unique
   y Int @unique
-  content String
-  type Types
   scale Float
   rotation Float
   visitorId String?

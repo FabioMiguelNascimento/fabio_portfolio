@@ -190,6 +190,7 @@ section {
   }
   body {
     @apply bg-background text-foreground;
+    overflow-x: hidden;
   }
   main {
     margin-inline: auto;
@@ -197,7 +198,7 @@ section {
     width: 100%;
     padding-inline: var(--page-inline-padding);
   }
-}
+} 
 
 /* Skills Grid Spotlight Effect */
 .skills-grid:hover .skill-item::before {
@@ -313,6 +314,3 @@ html {
 .animate-out-to-top { animation: outToTop 0.26s cubic-bezier(.2,.9,.2,1) both; }
 .animate-in-from-top { animation: inFromTop 0.26s cubic-bezier(.2,.9,.2,1) both; }
 .animate-out-to-bottom { animation: outToBottom 0.26s cubic-bezier(.2,.9,.2,1) both; }
-
-
-

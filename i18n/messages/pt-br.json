@@ -90,11 +90,27 @@
         },
         "skills": {
             "title": "Habilidades",
-            "backend": ["Node.js", "NestJS", "PostgreSQL"],
-            "frontend": ["TypeScript", "React", "Next.js"],
-            "infra": ["Docker", "Redis"],
-            "ai": ["LLMs"],
-            "other": ["Clean Architecture", "DDD"]
+            "backend": [
+                "Node.js",
+                "NestJS",
+                "PostgreSQL"
+            ],
+            "frontend": [
+                "TypeScript",
+                "React",
+                "Next.js"
+            ],
+            "infra": [
+                "Docker",
+                "Redis"
+            ],
+            "ai": [
+                "LLMs"
+            ],
+            "other": [
+                "Clean Architecture",
+                "DDD"
+            ]
         },
         "education": {
             "title": "Educação",
@@ -151,6 +167,24 @@
                 "title": "Dashboard Admin",
                 "description": "Painel administrativo com visualização de dados em tempo real, gráficos interativos e gerenciamento de usuários."
             }
+        }
+    },
+    "stamps": {
+        "header": {
+            "title": "Carimbos",
+            "subtitle": "Deixe sua presença — escolha um carimbo e coloque onde quiser no canvas"
+        },
+        "actions": {
+            "select": "Selecionar carimbo",
+            "place": "Colocar carimbo"
+        },
+        "instructions": {
+            "drag": "Arraste um carimbo para o canvas ou clique para posicionar",
+            "clickToPlace": "Clique no canvas para posicionar o carimbo selecionado"
+        },
+        "empty": {
+            "title": "Ainda não há carimbos",
+            "description": "Selecione um carimbo na lista para começar a marcar"
         }
     }
 }

@@ -5,8 +5,8 @@ import { HugeiconsIcon, IconSvgElement } from "@hugeicons/react"
 import React from "react"
 import type { IconType } from "react-icons"
 
-import { FiBook, FiExternalLink, FiGithub, FiLayers, FiTarget } from "react-icons/fi"
-import { SiAxios, SiChartdotjs, SiCloudflare, SiDocker, SiFirebase, SiMarkdown, SiMongodb, SiMui, SiNestjs, SiNextdotjs, SiNodedotjs, SiPostgresql, SiPrisma, SiRabbitmq, SiReact, SiRedis, SiSass, SiSocketdotio, SiTailwindcss, SiTypescript } from "react-icons/si"
+import { FiBook, FiCode, FiCoffee, FiExternalLink, FiGithub, FiHeart, FiLayers, FiTarget, FiZap } from "react-icons/fi"
+import { SiArchlinux, SiAxios, SiChartdotjs, SiCloudflare, SiDocker, SiFirebase, SiMarkdown, SiMongodb, SiMui, SiNestjs, SiNextdotjs, SiNodedotjs, SiPostgresql, SiPrisma, SiRabbitmq, SiReact, SiRedis, SiSass, SiSocketdotio, SiTailwindcss, SiTypescript } from "react-icons/si"
 import { TbDevices, TbRobot } from "react-icons/tb"
 
 export const HUGEICONS: Record<string, IconSvgElement> = {
@@ -42,9 +42,13 @@ export const REACT_ICONS: Record<string, IconType> = {
   FiGithub: (FiGithub as unknown) as IconType,
   FiLayers: (FiLayers as unknown) as IconType,
   FiTarget: (FiTarget as unknown) as IconType,
+  SiArchlinux,
+  FiCoffee: (FiCoffee as unknown) as IconType,
+  FiHeart: (FiHeart as unknown) as IconType,
+  FiCode: (FiCode as unknown) as IconType,
+  FiZap: (FiZap as unknown) as IconType,
 }
 
-// Friendly name map: maps human-friendly skill names to icon keys in REACT_ICONS or HUGEICONS
 export const FRIENDLY_NAME_TO_KEY: Record<string, string> = {
   "TypeScript": "SiTypescript",
   "React": "SiReact",
