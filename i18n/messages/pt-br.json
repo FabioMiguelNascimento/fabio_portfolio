@@ -172,7 +172,12 @@
     "stamps": {
         "header": {
             "title": "Carimbos",
-            "subtitle": "Deixe sua presença — escolha um carimbo e coloque onde quiser no canvas"
+            "subtitle": "Deixe sua presença — escolha um carimbo e coloque onde quiser no canvas",
+            "tooltip": {
+                "label": "Informações dos carimbos",
+            "desktop": "Selecione um carimbo<cycler></cycler> e arraste-o para o canvas.<br></br><br></br>Confirme para salvar. (Um carimbo por visitante!)",
+            "mobile": "Selecione um carimbo<cycler></cycler> e arraste-o para o canvas.<br></br><br></br>Use <icon></icon> para alternar a interatividade.<br></br><br></br>Confirme para salvar. (Um carimbo por visitante!)"
+            }
         },
         "actions": {
             "select": "Selecionar carimbo",

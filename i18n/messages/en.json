@@ -90,11 +90,27 @@
         },
         "skills": {
             "title": "Skills",
-            "backend": ["Node.js", "NestJS", "PostgreSQL"],
-            "frontend": ["TypeScript", "React", "Next.js"],
-            "infra": ["Docker", "Redis"],
-            "ai": ["LLMs"],
-            "other": ["Clean Architecture", "DDD"]
+            "backend": [
+                "Node.js",
+                "NestJS",
+                "PostgreSQL"
+            ],
+            "frontend": [
+                "TypeScript",
+                "React",
+                "Next.js"
+            ],
+            "infra": [
+                "Docker",
+                "Redis"
+            ],
+            "ai": [
+                "LLMs"
+            ],
+            "other": [
+                "Clean Architecture",
+                "DDD"
+            ]
         },
         "education": {
             "title": "Education",
@@ -156,7 +172,12 @@
     "stamps": {
         "header": {
             "title": "Stamps",
-            "subtitle": "Leave your mark — choose a stamp and place it anywhere on the canvas"
+            "subtitle": "Leave your mark — choose a stamp and place it anywhere on the canvas",
+            "tooltip": {
+                "label": "Stamps information",
+            "desktop": "Select a stamp<cycler></cycler> & Drag it to the canvas.<br></br><br></br>Confirm to save. (One stamp per visitor!)",
+            "mobile": "Select a stamp<cycler></cycler> & Drag it to the canvas.<br></br><br></br>Use <icon></icon> to toggle interaction.<br></br><br></br>Confirm to save. (One stamp per visitor!)"
+            }
         },
         "actions": {
             "select": "Select stamp",

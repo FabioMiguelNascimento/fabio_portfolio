@@ -1,13 +1,11 @@
-import StampsCanvas from "./stamps-canvas";
+import StampsArea from "./stamps-area";
 import StampsHeader from "./stamps-header";
-import StampsSelectorContent from "./stamps-selector";
 
 export default async function Stamps() {
     return(
         <section className="space-y-6" >
             <StampsHeader />
-            <StampsSelectorContent />
-            <StampsCanvas />
+            <StampsArea />
         </section>
     )
 }

@@ -17,7 +17,7 @@ export default function Emoji() {
     <span className="relative flex items-center justify-center w-5 h-5 shrink-0">
       <Image
         style={{
-          transition: "transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275)", // Efeito elástico (bouncy)
+          transition: "transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275)",
           transform: isAnimating
             ? "scale(1.5) rotate(15deg)"
             : "scale(1) rotate(0deg)",

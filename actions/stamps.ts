@@ -2,10 +2,9 @@
 
 import { getVisitorId } from "@/lib/get-visitor-ip";
 import prisma from "@/lib/prisma";
-import { Types } from "@/prisma/generated/enums";
 import { revalidatePath } from "next/cache";
 
-export async function addStamp(data: { x: number, y: number, content: string, type: Types, rotation: number, scale: number }) {
+export async function addStamp(data: { x: number, y: number, stampId: string, rotation: number, scale: number }) {
   const visitorId = await getVisitorId();
 
   const lastStamp = await prisma.stamp.findFirst({
@@ -14,14 +13,7 @@ export async function addStamp(data: { x: number, y: number, content: string, ty
   });
 
   if (lastStamp) {
-    const now = new Date();
-    const diffInSeconds = (now.getTime() - lastStamp.createdAt.getTime()) / 1000;
-    
-    if (diffInSeconds < 60) {
-      return { 
-        success: false, 
-      };
-    }
+    return { success: false, reason: "already_published" };
   }
 
   const totalStamps = await prisma.stamp.count();
@@ -41,11 +33,19 @@ export async function addStamp(data: { x: number, y: number, content: string, ty
   return { success: true };
 }
 
+export async function getVisitorStamp() {
+  const visitorId = await getVisitorId();
+
+  return await prisma.stamp.findFirst({
+    where: { visitorId },
+    orderBy: { createdAt: 'desc' }
+  });
+}
+
 export async function getAllStamps() {
   return await prisma.stamp.findMany({
     orderBy: {
       createdAt: "asc"
-    },
-    take: 50
+    }
   })
 }
