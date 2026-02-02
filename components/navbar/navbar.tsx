@@ -115,7 +115,7 @@ export default function Navbar() {
                 backgroundImage: "radial-gradient(var(--background) 1px, transparent 1px)",
                 backgroundSize: "4px 4px",
                 mask: "linear-gradient(to bottom, black calc(90%), transparent 100%)",
-                WebkitMask: "linear-gradient(to bottom, black calc(100% - 50px), transparent 100%)",
+                WebkitMask: "linear-gradient(to bottom, black calc(100% - 20px), transparent 100%)",
                 WebkitBackdropFilter: "blur(3px)",
             }}
         >
