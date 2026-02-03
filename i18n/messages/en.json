@@ -29,6 +29,12 @@
         "open": "Open to work",
         "unavailable": "Unavailable"
     },
+    "about": {
+        "title": "Who is Fábio?",
+        "description": "Full Stack Dev focused on solving complex problems.<br></br><br></br>Fan of <strong>Clean Arch</strong>, Arch Linux user and fueled by black coffee.",
+        "divider_text": "Before you see the code, know who coded it.",
+        "annotation": "That's me!"
+    },
     "resume": {
         "header": {
             "title": "Resume",

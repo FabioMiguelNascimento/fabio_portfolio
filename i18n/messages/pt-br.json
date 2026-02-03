@@ -29,6 +29,12 @@
         "open": "Disponível para trabalho",
         "unavailable": "Indisponível"
     },
+    "about": {
+        "title": "Quem é o Fábio?",
+        "description": "Dev Full Stack focado em resolver problemas complexos.<br></br><br></br>Fã de <strong>Clean Arch</strong>, usuário de <strong>Arch Linux</strong> e movido a café preto.",
+        "divider_text": "Antes de ver o código, saiba quem codou.",
+        "annotation": "Sou eu!"
+    },
     "resume": {
         "header": {
             "title": "Currículo",
