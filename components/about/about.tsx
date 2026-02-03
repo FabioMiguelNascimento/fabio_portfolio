@@ -49,7 +49,7 @@ export default async function About() {
       <div className="mt-4 pt-3 border-t-2 border-dotted border-stone-800/10 dark:border-amber-600/20 flex items-center justify-between text-stone-600 dark:text-amber-200/80">
         <div className="flex items-center gap-1.5 text-xs">
           <FiMapPin className="w-3.5 h-3.5" />
-          <span>Porto Alegre, RS</span>
+          <span>Taquara, RS</span>
         </div>
       </div>
     </div>
