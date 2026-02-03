@@ -37,6 +37,7 @@ export default function MobileNavbar({ items, menuLabel }: MobileNavbarProps) {
                                             src={item.icon}
                                             width={iconSize}
                                             height={iconSize}
+                                            priority={true}
                                             alt=""
                                             className={cn(
                                                 "shrink-0 rounded-full object-cover",

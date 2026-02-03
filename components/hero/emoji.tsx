@@ -27,6 +27,7 @@ export default function Emoji() {
         alt="waving hand"
         fill
         sizes="20px"
+        priority={true}
         className="object-contain cursor-pointer"
       />
     </span>

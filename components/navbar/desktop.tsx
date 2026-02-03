@@ -67,6 +67,7 @@ export default function DesktopNavbar({ links, actions }: DesktopNavbarProps) {
                                             width={24}
                                             height={24}
                                             alt=""
+                                            priority={true}
                                             className="size-5 shrink-0 rounded-full object-cover"
                                         />
                                     ) : (

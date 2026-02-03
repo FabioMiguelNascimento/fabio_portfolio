@@ -27,6 +27,7 @@ export default function ExperienceSection({
                   alt={`${item.company} logo`}
                   width={56}
                   height={56}
+                  priority={true}
                 />
               </div>
             </div>
@@ -43,6 +44,7 @@ export default function ExperienceSection({
                     alt={`${item.company} logo`}
                     width={32}
                     height={32}
+                    priority={true}
                   />
                 </span>
                 <span className="break-words">{item.company}</span>

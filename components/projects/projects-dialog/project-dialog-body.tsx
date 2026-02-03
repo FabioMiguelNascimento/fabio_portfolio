@@ -39,7 +39,7 @@ export default function ProjectDialogBody({ project, metadata }: Props) {
   return (
     <div className="space-y-2">
         <div className="-mx-4 sm:-mx-6 -mt-6 overflow-hidden rounded-t-lg">
-          <Image src={project.image} alt={metadata.title} width={1400} height={560} className="w-full h-64 sm:h-72 md:h-80 object-cover" />
+          <Image src={project.image} alt={metadata.title} width={1400} height={560} className="w-full h-64 sm:h-72 md:h-80 object-cover" priority={true} />
         </div>
 
       <div className="mt-4 mb-2 flex items-center gap-3">

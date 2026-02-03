@@ -22,6 +22,7 @@ export default function ProjectCursorContent({ project, metadata, direction, pre
                     alt={previous.metadata.title}
                     width={300}
                     height={169}
+                    priority={true}
                     className={`absolute inset-0 w-full h-full object-cover ${animationOutClass}`}
                 />
             )}
@@ -33,6 +34,7 @@ export default function ProjectCursorContent({ project, metadata, direction, pre
                     alt={metadata.title}
                     width={300}
                     height={169}
+                    priority={true}
                     className={`absolute inset-0 w-full h-full object-cover ${isTransitioning ? animationInClass : ''}`}
                 />
             )}
