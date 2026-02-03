@@ -25,6 +25,14 @@
         },
         "tech_title": "My Stack"
     },
+    "contact": {
+        "title": "Let's build something together?",
+        "subtitle": "Always open to chat about Tech, Linux or Coffee.",
+        "email": "your.email@example.com",
+        "copy": "Copy email",
+        "copied": "Copied!",
+        "basedIn": "BASED IN TAQUARA, RS"
+    },
     "status": {
         "open": "Open to work",
         "unavailable": "Unavailable"

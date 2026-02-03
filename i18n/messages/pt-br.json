@@ -25,6 +25,14 @@
         },
         "tech_title": "Minha Stack"
     },
+    "contact": {
+        "title": "Vamos construir algo juntos?",
+        "subtitle": "Sempre aberto para trocar ideias sobre Tech, Linux ou Café.",
+        "emailLabel": "Email",
+        "copy": "Copiar e-mail",
+        "copied": "Copiado!",
+        "basedIn": "BASEADO EM TAQUARA, RS"
+    },
     "status": {
         "open": "Disponível para trabalho",
         "unavailable": "Indisponível"
