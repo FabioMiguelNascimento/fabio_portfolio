@@ -65,12 +65,12 @@ export default function Contact() {
           )}
         </div> 
 
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-2 gap-3 items-stretch">
           <Link href="https://github.com/FabioMiguelNascimento" target="_blank">
             <Button
               variant="outline"
               size="sm"
-              className="inline-flex gap-2 items-center justify-center"
+              className="w-full inline-flex gap-2 items-center justify-center"
             >
               <HugeiconsIcon icon={Github01FreeIcons} /> GitHub
             </Button>
@@ -79,7 +79,7 @@ export default function Contact() {
             <Button
               variant="outline"
               size="sm"
-              className="inline-flex gap-2 items-center justify-center"
+              className="w-full inline-flex gap-2 items-center justify-center"
             >
               <HugeiconsIcon icon={Linkedin01FreeIcons} /> LinkedIn
             </Button>
