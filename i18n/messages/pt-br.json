@@ -31,7 +31,8 @@
         "emailLabel": "Email",
         "copy": "Copiar e-mail",
         "copied": "Copiado!",
-        "basedIn": "BASEADO EM TAQUARA, RS"
+        "basedIn": "BASEADO EM TAQUARA, RS",
+        "role": "Desenvolvedor Full Stack"
     },
     "status": {
         "open": "Disponível para trabalho",
