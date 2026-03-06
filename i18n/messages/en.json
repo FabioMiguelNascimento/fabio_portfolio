@@ -183,6 +183,11 @@
             }
         }
     },
+    "footer": {
+        "rights": "All rights reserved",
+        "source": "Source",
+        "linkedin": "LinkedIn"
+    },
     "stamps": {
         "header": {
             "title": "Stamps",

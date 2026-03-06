@@ -5,6 +5,7 @@ import Projects from "@/components/projects/projects";
 import Stamps from "@/components/stamps/stamps";
 import { routing } from "@/i18n/routing";
 import { setRequestLocale } from "next-intl/server";
+import Footer from "@/components/footer";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -29,9 +30,7 @@ export default async function Home({ params }: Props) {
 
         <Contact />
 
-        <footer id="site-footer" className="mt-8 border-t pt-6 text-center text-sm text-slate-600 dark:text-slate-400">
-          <p>© {new Date().getFullYear()} — Footer temporário</p>
-        </footer>
+        <Footer />
       </main>
     </main>
   );

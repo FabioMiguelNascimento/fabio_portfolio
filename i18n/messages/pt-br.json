@@ -184,6 +184,11 @@
             }
         }
     },
+    "footer": {
+        "rights": "Todos os direitos reservados",
+        "source": "Fonte",
+        "linkedin": "LinkedIn"
+    },
     "stamps": {
         "header": {
             "title": "Carimbos",
