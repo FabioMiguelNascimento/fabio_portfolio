@@ -166,6 +166,10 @@
                 "title": "Bizzconnect",
                 "description": "SaaS multi-tenant de mensageria e automação. Centralize canais de atendimento, gerencie filas complexas e escale operações com arquitetura baseada em microsserviços e eventos."
             },
+            "salva-contas": {
+                "title": "Salva Contas",
+                "description": "Um gerenciador financeiro moderno que une compartilhamento familiar, inteligência artificial e gamificação para simplificar o controle de gastos diários. Desenvolvido de ponta a ponta, com foco em uma arquitetura escalável e experiência de usuário premium."
+            },
             "weather_app": {
                 "title": "Weather App",
                 "description": "Aplicativo de previsão do tempo com geolocalização, mapas interativos e alertas meteorológicos."

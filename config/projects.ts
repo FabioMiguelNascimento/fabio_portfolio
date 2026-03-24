@@ -31,7 +31,7 @@ export const projects: Project[] = [
       demo: "https://ais-update.vercel.app",
     },
   },
-{
+  {
     id: "bizzconnect",
     image: "/images/projects/bizzconnect.png",
     releaseDate: "2026",
@@ -46,6 +46,22 @@ export const projects: Project[] = [
     links: {
       demo: "https://bizzconnect-nu.vercel.app/pt-BR",
     },
+  },
+  {
+    "id": "salva-contas",
+    "image": "/images/projects/salva-contas.png",
+    "releaseDate": "2026",
+    "tags": [
+      { "name": "React", "iconKey": "SiReact" },
+      { "name": "TypeScript", "iconKey": "SiTypescript" },
+      { "name": "Tailwind CSS", "iconKey": "SiTailwindcss" },
+      { "name": "NestJs", "iconKey": "SiNestjs" },
+      { "name": "Artificial Intelligence", "iconKey": "AiOutlineRobot" },
+    ],
+    "links": {
+      "demo": "https://salva-contas.vercel.app/",
+      "repository": "https://github.com/FabioMiguelNascimento/salva-contas"
+    }
   },
   {
     id: "weather_app",

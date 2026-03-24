@@ -165,6 +165,10 @@
                 "title": "Bizzconnect",
                 "description": "Multi-tenant messaging and automation SaaS. Centralize communication channels, manage complex queues, and scale operations with microservices-based architecture and events."
             },
+            "salva-contas": {
+                "title": "Salva Contas",
+                "description": "A modern financial manager combining family sharing, artificial intelligence, and gamification to simplify daily expense control. Built end-to-end with a focus on scalable architecture and premium user experience."
+            },
             "weather_app": {
                 "title": "Weather App",
                 "description": "Weather forecast app with geolocation, interactive maps and weather alerts."
