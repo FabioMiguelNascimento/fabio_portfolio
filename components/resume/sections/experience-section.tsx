@@ -23,7 +23,7 @@ export default function ExperienceSection({
               <div className="w-14 h-14 rounded-lg bg-card-foreground border border-muted-foreground flex items-center justify-center overflow-hidden">
                 <Image
                   className="rounded-lg"
-                  src={`/icons/companies/${item.company.toLowerCase()}.${item.extension}`}
+                  src={item.logo || `/icons/companies/${item.company.toLowerCase()}.${item.extension}`}
                   alt={`${item.company} logo`}
                   width={56}
                   height={56}
@@ -40,7 +40,7 @@ export default function ExperienceSection({
                 <span className="sm:hidden inline-flex mr-3 items-center justify-center w-8 h-8 rounded-lg bg-card-foreground border border-muted-foreground overflow-hidden">
                   <Image
                     className="rounded-lg"
-                    src={`/icons/companies/${item.company.toLowerCase()}.${item.extension}`}
+                    src={item.logo || `/icons/companies/${item.company.toLowerCase()}.${item.extension}`}
                     alt={`${item.company} logo`}
                     width={32}
                     height={32}

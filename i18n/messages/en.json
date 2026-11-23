@@ -40,7 +40,7 @@
     },
     "about": {
         "title": "Who is Fábio?",
-        "description": "Full Stack Dev focused on solving complex problems.<br></br><br></br>Fan of <strong>Clean Arch</strong>, Arch Linux user and fueled by black coffee.",
+        "description": "Full Stack Dev focused on solving complex problems with clean architecture, AI, and automation.<br></br><br></br>Fan of <strong>Clean Arch</strong>, <strong>Agentic Coding</strong>, Arch Linux user, and fueled by black coffee.",
         "divider_text": "Before you see the code, know who coded it.",
         "annotation": "That's me!"
     },
@@ -51,10 +51,25 @@
             "file": "/resumes/Resume_Fabio_Miguel_Nascimento.pdf"
         },
         "role": "Full Stack Developer",
-        "summary": "Junior Full Stack Developer with strong backend orientation and practical experience building scalable, AI-ready systems. Experience in NestJS, Node.js, messaging queues, WebSockets, and strong software engineering practices (Clean Architecture, DDD).",
+        "summary": "Full Stack Developer experienced in building scalable applications, microservices, and cloud infrastructure (AWS). Practical expertise in NestJS, Next.js, Node.js, Clean Architecture, DDD, CI/CD pipelines, and modern Agentic Coding & Spec-Driven Development (SDD) workflows with LLMs.",
         "experience": {
             "title": "Experience",
             "items": [
+                {
+                    "role": "Full Stack Developer",
+                    "company": "Gestão Evolutivo",
+                    "period": "Apr/2026 - Present",
+                    "logo": "/icons/companies/evolutivo.png",
+                    "extension": "png",
+                    "responsibilities": [
+                        "Architected and developed a central <strong>IAM</strong> platform with <strong>Single Sign-On (SSO)</strong>, multi-tenancy, and <strong>RBAC</strong>.",
+                        "Engineered microservices in <strong>NestJS</strong> and <strong>PostgreSQL</strong> integrated with <strong>Next.js</strong> interfaces, sharing packages via <strong>Turborepo</strong> and <strong>GitHub Packages</strong>.",
+                        "Implemented <strong>Agentic Coding</strong> and <strong>Spec-Driven Development (SDD)</strong> workflows with <strong>LLMs</strong>, governing autonomous agents for automation and fast software delivery.",
+                        "Structured <strong>CI/CD</strong> pipelines with <strong>GitHub Actions</strong> and managed continuous deployment routines on <strong>AWS</strong>.",
+                        "Built data integration pipelines for processing files (<strong>XML</strong>, <strong>CSV</strong>, tax layouts <strong>SPED</strong>) and webhooks integration with enterprise ERPs.",
+                        "Implemented unified cloud storage gateway with <strong>AWS S3</strong> and <strong>Cloudflare R2</strong>, plus automated test suites using <strong>Vitest</strong>."
+                    ]
+                },
                 {
                     "role": "Web Developer / CRM",
                     "company": "Allinsys",
@@ -84,13 +99,13 @@
             "title": "Academic & Personal Projects",
             "items": [
                 {
-                    "name": "BizzConnect — Multi-tenant Messaging SaaS",
-                    "period": "In Progress",
-                    "description": "End-to-end platform for WhatsApp-based customer communication and automation, designed for scale and resilience.",
+                    "name": "BizzConnect — Multi-tenant Messaging SaaS (Authorial Project)",
+                    "period": "Authorial Project (Mar/2024 - Present)",
+                    "description": "End-to-end design, architecture, and development of a SaaS platform for contact automation and multi-channel messaging.",
                     "highlights": [
-                        "Designed to support 500+ concurrent WebSocket connections.",
-                        "Asynchronous processing with RabbitMQ and Redis cache to keep average latency <200ms.",
-                        "AI-assisted workflows planned for message categorization and response suggestions."
+                        "Structured scalable backend with <strong>Node.js</strong>, <strong>Prisma ORM</strong>, and <strong>Clean Architecture</strong> for high maintainability.",
+                        "Implemented robust security with <strong>JWT</strong> authentication, refresh tokens, and strict <strong>Zod</strong> data validation.",
+                        "Built reactive frontend using <strong>React</strong>, <strong>Vite</strong>, and <strong>TypeScript</strong> with real-time <strong>WebSockets</strong>."
                     ]
                 },
                 {
@@ -108,23 +123,38 @@
             "backend": [
                 "Node.js",
                 "NestJS",
-                "PostgreSQL"
+                "PostgreSQL",
+                "Drizzle ORM",
+                "Prisma"
             ],
             "frontend": [
                 "TypeScript",
                 "React",
-                "Next.js"
+                "Next.js",
+                "Tailwind CSS"
             ],
             "infra": [
+                "AWS (S3, EC2)",
+                "GitHub Actions",
+                "CI/CD",
                 "Docker",
-                "Redis"
+                "Cloudflare R2",
+                "Turborepo"
             ],
             "ai": [
-                "LLMs"
+                "Agentic Coding",
+                "Spec-Driven Development (SDD)",
+                "LLMs",
+                "Agentes Autônomos",
+                "Prompt Engineering"
             ],
             "other": [
                 "Clean Architecture",
-                "DDD"
+                "DDD",
+                "IAM/SSO",
+                "RBAC",
+                "Zod",
+                "Vitest"
             ]
         },
         "education": {
@@ -163,8 +193,8 @@
                 "description": "A personal application that allows creating and sharing Markdown-formatted logs via URLs, facilitating documentation and information sharing."
             },
             "bizzconnect": {
-                "title": "Bizzconnect",
-                "description": "Multi-tenant messaging and automation SaaS. Centralize communication channels, manage complex queues, and scale operations with microservices-based architecture and events."
+                "title": "Bizzconnect (Authorial Project)",
+                "description": "Authorial multi-tenant SaaS for messaging and contact automation. Centralize communication channels, manage queues, and scale operations with event-driven architecture."
             },
             "salva-contas": {
                 "title": "Salva Contas",
@@ -199,8 +229,8 @@
             "subtitle": "Leave your mark — choose a stamp and place it anywhere on the canvas",
             "tooltip": {
                 "label": "Stamps information",
-            "desktop": "Select a stamp<cycler></cycler> & Drag it to the canvas.<br></br><br></br>Confirm to save. (One stamp per visitor!)",
-            "mobile": "Select a stamp<cycler></cycler> & Drag it to the canvas.<br></br><br></br>Use <icon></icon> to toggle interaction.<br></br><br></br>Confirm to save. (One stamp per visitor!)"
+                "desktop": "Select a stamp<cycler></cycler> & Drag it to the canvas.<br></br><br></br>Confirm to save. (One stamp per visitor!)",
+                "mobile": "Select a stamp<cycler></cycler> & Drag it to the canvas.<br></br><br></br>Use <icon></icon> to toggle interaction.<br></br><br></br>Confirm to save. (One stamp per visitor!)"
             }
         },
         "actions": {

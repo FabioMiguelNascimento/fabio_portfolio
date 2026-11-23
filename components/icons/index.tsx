@@ -6,7 +6,7 @@ import React from "react"
 import type { IconType } from "react-icons"
 
 import { FiBook, FiCode, FiCoffee, FiExternalLink, FiGithub, FiHeart, FiLayers, FiTarget, FiZap } from "react-icons/fi"
-import { SiArchlinux, SiAxios, SiChartdotjs, SiCloudflare, SiDocker, SiFirebase, SiLinux, SiMarkdown, SiMongodb, SiMui, SiNestjs, SiNextdotjs, SiNodedotjs, SiPostgresql, SiPrisma, SiRabbitmq, SiReact, SiRedis, SiSass, SiSocketdotio, SiTailwindcss, SiTypescript } from "react-icons/si"
+import { SiAmazonwebservices, SiArchlinux, SiAxios, SiChartdotjs, SiCloudflare, SiDocker, SiFirebase, SiGithubactions, SiLinux, SiMarkdown, SiMongodb, SiMui, SiNestjs, SiNextdotjs, SiNodedotjs, SiPostgresql, SiPrisma, SiRabbitmq, SiReact, SiRedis, SiSass, SiSocketdotio, SiTailwindcss, SiTurborepo, SiTypescript, SiVitest, SiZod } from "react-icons/si"
 import { TbDevices, TbRobot } from "react-icons/tb"
 
 export const HUGEICONS: Record<string, IconSvgElement> = {
@@ -36,6 +36,11 @@ export const REACT_ICONS: Record<string, IconType> = {
   SiMui,
   SiTypescript,
   SiLinux,
+  SiAmazonwebservices,
+  SiVitest,
+  SiTurborepo,
+  SiZod,
+  SiGithubactions,
   TbDevices: (TbDevices as unknown) as IconType,
   TbRobot: (TbRobot as unknown) as IconType,
   FiBook: (FiBook as unknown) as IconType,
@@ -62,6 +67,21 @@ export const FRIENDLY_NAME_TO_KEY: Record<string, string> = {
   "LLMs": "TbRobot",
   "Clean Architecture": "FiLayers",
   "DDD": "FiTarget",
+  "Tailwind CSS": "SiTailwindcss",
+  "AWS (S3, EC2)": "SiAmazonwebservices",
+  "AWS": "SiAmazonwebservices",
+  "GitHub Actions": "SiGithubactions",
+  "Turborepo": "SiTurborepo",
+  "Vitest": "SiVitest",
+  "Zod": "SiZod",
+  "Cloudflare R2": "SiCloudflare",
+  "Agentic Coding": "TbRobot",
+  "Spec-Driven Development (SDD)": "FiTarget",
+  "Agentes Autônomos": "TbRobot",
+  "Prompt Engineering": "FiCode",
+  "CI/CD": "SiGithubactions",
+  "IAM/SSO": "FiLayers",
+  "RBAC": "FiTarget",
 }
 
 export function getIconComponent(iconKeyOrFriendly: string): React.ReactNode {

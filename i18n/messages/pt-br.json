@@ -40,7 +40,7 @@
     },
     "about": {
         "title": "Quem é o Fábio?",
-        "description": "Dev Full Stack focado em resolver problemas complexos.<br></br><br></br>Fã de <strong>Clean Arch</strong>, usuário de <strong>Arch Linux</strong> e movido a café preto.",
+        "description": "Dev Full Stack focado em resolver problemas complexos com arquitetura limpa, IA e automação.<br></br><br></br>Entusiasta de <strong>Clean Arch</strong>, <strong>Agentic Coding</strong>, usuário de <strong>Arch Linux</strong> e movido a café preto.",
         "divider_text": "Antes de ver o código, saiba quem codou.",
         "annotation": "Sou eu!"
     },
@@ -51,10 +51,25 @@
             "file": "/resumes/Curriculo_Fabio_Miguel_Nascimento.pdf"
         },
         "role": "Desenvolvedor Full Stack",
-        "summary": "Desenvolvedor Full Stack com foco na construção de sistemas escaláveis, plataformas SaaS e automação. Experiência em NestJS, Node.js, filas (RabbitMQ), WebSockets e práticas de engenharia de software (Clean Architecture, DDD).",
+        "summary": "Desenvolvedor Full Stack com foco no desenvolvimento de microsserviços, portais corporativos e nuvem (AWS). Experiência prática em NestJS, Next.js, Node.js, Clean Architecture, DDD, CI/CD e fluxos modernos de Agentic Coding e Spec-Driven Development (SDD) com LLMs.",
         "experience": {
             "title": "Experiência",
             "items": [
+                {
+                    "role": "Desenvolvedor Full Stack",
+                    "company": "Gestão Evolutivo",
+                    "period": "Abr/2026 - Atual",
+                    "logo": "/icons/companies/evolutivo.png",
+                    "extension": "png",
+                    "responsibilities": [
+                        "Arquitetei e desenvolvi plataforma central de <strong>IAM</strong> com <strong>Single Sign-On (SSO)</strong>, multi-tenancy e controle de acesso baseado em <strong>RBAC</strong>.",
+                        "Desenvolvi microsserviços em <strong>NestJS</strong> e <strong>PostgreSQL</strong> integrados a interfaces em <strong>Next.js</strong>, compartilhando pacotes via <strong>Turborepo</strong> e <strong>GitHub Packages</strong>.",
+                        "Implementei fluxos de <strong>Agentic Coding</strong> e <strong>Spec-Driven Development (SDD)</strong> com <strong>LLMs</strong>, orquestrando agentes autônomos para automação e aceleração de software.",
+                        "Estruturei pipelines de <strong>CI/CD</strong> com <strong>GitHub Actions</strong> e gerenciei rotinas de deploy contínuo em infraestrutura na <strong>AWS</strong>.",
+                        "Construí pipelines de integração para processamento de arquivos (<strong>XML</strong>, <strong>CSV</strong>, layouts <strong>SPED</strong>) e comunicação com ERPs corporativos via webhooks.",
+                        "Implementei gateway de armazenamento em nuvem unificado com <strong>AWS S3</strong> e <strong>Cloudflare R2</strong>, além de testes automatizados com <strong>Vitest</strong>."
+                    ]
+                },
                 {
                     "role": "Desenvolvedor Web / CRM",
                     "company": "Allinsys",
@@ -84,13 +99,13 @@
             "title": "Projetos de Destaque",
             "items": [
                 {
-                    "name": "BizzConnect (SaaS de Mensageria Multi-tenant)",
-                    "period": "Em desenvolvimento",
-                    "description": "Plataforma para gestão de atendimentos via WhatsApp. Arquitetura multi-tenant, filas (RabbitMQ), cache (Redis) e suporte a 500+ conexões simultâneas via WebSockets.",
+                    "name": "BizzConnect (SaaS de Mensageria Multi-tenant - Projeto Autoral)",
+                    "period": "Projeto Autoral (Mar/2024 - Atual)",
+                    "description": "Idealização, arquitetura e desenvolvimento end-to-end de plataforma SaaS para automação e gestão de contatos.",
                     "highlights": [
-                        "Arquitetura escalável preparada para 500+ conexões concorrentes.",
-                        "Processamento assíncrono com RabbitMQ e cache Redis, reduzindo latência para <200ms.",
-                        "Estruturado com NestJS, Next.js, PostgreSQL e Docker, com testes automatizados e foco em IA futura."
+                        "Estruturei o backend escalável com <strong>Node.js</strong>, <strong>Prisma ORM</strong> e <strong>Clean Architecture</strong>, garantindo escalabilidade e testabilidade.",
+                        "Implementei autenticação segura com <strong>JWT</strong> e refresh tokens, além de pipeline rigoroso de validação com <strong>Zod</strong>.",
+                        "Desenvolvi interface reativa em <strong>React</strong>, <strong>Vite</strong> e <strong>TypeScript</strong> com mensageria em tempo real via <strong>WebSockets</strong>."
                     ]
                 },
                 {
@@ -108,23 +123,38 @@
             "backend": [
                 "Node.js",
                 "NestJS",
-                "PostgreSQL"
+                "PostgreSQL",
+                "Drizzle ORM",
+                "Prisma"
             ],
             "frontend": [
                 "TypeScript",
                 "React",
-                "Next.js"
+                "Next.js",
+                "Tailwind CSS"
             ],
             "infra": [
+                "AWS (S3, EC2)",
+                "GitHub Actions",
+                "CI/CD",
                 "Docker",
-                "Redis"
+                "Cloudflare R2",
+                "Turborepo"
             ],
             "ai": [
-                "LLMs"
+                "Agentic Coding",
+                "Spec-Driven Development (SDD)",
+                "LLMs",
+                "Agentes Autônomos",
+                "Prompt Engineering"
             ],
             "other": [
                 "Clean Architecture",
-                "DDD"
+                "DDD",
+                "IAM/SSO",
+                "RBAC",
+                "Zod",
+                "Vitest"
             ]
         },
         "education": {
@@ -163,8 +193,8 @@
                 "description": "Aplicação pessoal que permite criar e compartilhar registros em formato Markdown através de URLs, facilitando a documentação e compartilhamento de informações."
             },
             "bizzconnect": {
-                "title": "Bizzconnect",
-                "description": "SaaS multi-tenant de mensageria e automação. Centralize canais de atendimento, gerencie filas complexas e escale operações com arquitetura baseada em microsserviços e eventos."
+                "title": "Bizzconnect (Projeto Autoral)",
+                "description": "SaaS multi-tenant autoral de mensageria e automação. Centralize canais de atendimento, gerencie filas e escale operações com arquitetura baseada em microsserviços e eventos."
             },
             "salva-contas": {
                 "title": "Salva Contas",
@@ -199,8 +229,8 @@
             "subtitle": "Deixe sua presença — escolha um carimbo e coloque onde quiser no canvas",
             "tooltip": {
                 "label": "Informações dos carimbos",
-            "desktop": "Selecione um carimbo<cycler></cycler> e arraste-o para o canvas.<br></br><br></br>Confirme para salvar. (Um carimbo por visitante!)",
-            "mobile": "Selecione um carimbo<cycler></cycler> e arraste-o para o canvas.<br></br><br></br>Use <icon></icon> para alternar a interatividade.<br></br><br></br>Confirme para salvar. (Um carimbo por visitante!)"
+                "desktop": "Selecione um carimbo<cycler></cycler> e arraste-o para o canvas.<br></br><br></br>Confirme para salvar. (Um carimbo por visitante!)",
+                "mobile": "Selecione um carimbo<cycler></cycler> e arraste-o para o canvas.<br></br><br></br>Use <icon></icon> para alternar a interatividade.<br></br><br></br>Confirme para salvar. (Um carimbo por visitante!)"
             }
         },
         "actions": {
