@@ -17,6 +17,7 @@ interface ProjectCursorProps extends React.HTMLAttributes<HTMLDivElement> {
 const ProjectCursor = React.forwardRef<HTMLDivElement, ProjectCursorProps>(function ProjectCursor({ children, tooltipContent, projectIndex, projectData, ...rest }, ref) {
     const [isTooltipVisible, setIsTooltipVisible] = useState(false)
     const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 })
+    const [hasPosition, setHasPosition] = useState(false)
     const [showTooltipContent, setShowTooltipContent] = useState(false);
     const [animationDirection, setAnimationDirection] = useState<'up' | 'down' | null>(null);
     const [previousProject, setPreviousProject] = useState<{ project: any; metadata: any; index: number } | null>(null);
@@ -45,6 +46,7 @@ const ProjectCursor = React.forwardRef<HTMLDivElement, ProjectCursorProps>(funct
         }
 
         setTooltipPosition({ x: tooltipX, y: tooltipY })
+        setHasPosition(true)
     }
 
     const handleMouseEnter = () => {
@@ -76,10 +78,12 @@ const ProjectCursor = React.forwardRef<HTMLDivElement, ProjectCursorProps>(funct
 
         setIsTooltipVisible(true)
         setShowTooltipContent(false)
+        setHasPosition(false)
     }
 
     const handleMouseLeave = () => {
         setIsTooltipVisible(false)
+        setHasPosition(false)
         setAnimationDirection(null);
 
         setTimeout(() => {
@@ -147,7 +151,7 @@ const ProjectCursor = React.forwardRef<HTMLDivElement, ProjectCursorProps>(funct
             {...rest}
         >
 
-            {isTooltipVisible && (
+            {isTooltipVisible && hasPosition && (
                 <div
                     ref={tooltipRef}
                     className={`fixed border rounded-lg overflow-hidden transition-opacity duration-200 ${showTooltipContent ? 'opacity-100' : 'opacity-0'}`}
