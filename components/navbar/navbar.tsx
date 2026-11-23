@@ -90,7 +90,7 @@ export default function Navbar() {
             return [
                 {
                     name: currentLanguageShortLabel,
-                    icon: locale === "en" ? "/icons/united-states.png" : "/icons/brazil.png",
+                    icon: locale === "en" ? "/icons/united-states.webp" : "/icons/brazil.webp",
                     onClick: () => router.replace(pathname, { locale: nextLocale }),
                     srLabel: locale === "en" ? switchToPortugueseLabel : switchToEnglishLabel,
                 },

@@ -3,7 +3,7 @@ import { Project } from "@/components/projects/types";
 export const projects: Project[] = [
   {
     id: "portfolio",
-    image: "/images/projects/portfolio.png",
+    image: "/images/projects/portfolio.webp",
     releaseDate: "2025",
     tags: [
       { name: "React", iconKey: "SiReact" },
@@ -19,7 +19,7 @@ export const projects: Project[] = [
   },
   {
     id: "version_logger",
-    image: "/images/projects/ais-update.png",
+    image: "/images/projects/ais-update.webp",
     releaseDate: "2024",
     tags: [
       { name: "React", iconKey: "SiReact" },
@@ -33,7 +33,7 @@ export const projects: Project[] = [
   },
   {
     id: "bizzconnect",
-    image: "/images/projects/bizzconnect.png",
+    image: "/images/projects/bizzconnect.webp",
     releaseDate: "2026",
     tags: [
       { name: "Next.js", iconKey: "SiNextdotjs" },
@@ -49,7 +49,7 @@ export const projects: Project[] = [
   },
   {
     "id": "salva-contas",
-    "image": "/images/projects/salva-contas.png",
+    "image": "/images/projects/salva-contas.webp",
     "releaseDate": "2026",
     "tags": [
       { "name": "React", "iconKey": "SiReact" },
@@ -65,7 +65,7 @@ export const projects: Project[] = [
   },
   {
     id: "weather_app",
-    image: "/images/projects/weather-app.png",
+    image: "/images/projects/weather-app.webp",
     releaseDate: "2024",
     tags: [
       { name: "React", iconKey: "SiReact" },
@@ -80,7 +80,7 @@ export const projects: Project[] = [
   },
   {
     id: "portfolio_maya",
-    image: "/images/projects/maya-portfolio.png",
+    image: "/images/projects/maya-portfolio.webp",
     releaseDate: "2024",
     tags: [
       { name: "React", iconKey: "SiReact" },

@@ -23,7 +23,7 @@ export default function Emoji() {
             : "scale(1) rotate(0deg)",
         }}
         onClick={() => randomEmoji()}
-        src={`/emojis/${index}.png`}
+        src={`/emojis/${index}.webp`}
         alt="waving hand"
         fill
         sizes="20px"
