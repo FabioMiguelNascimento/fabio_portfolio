@@ -18,7 +18,7 @@ const Project = React.forwardRef<HTMLButtonElement, ProjectProps & React.ButtonH
   return (
     <button ref={ref} {...props} type="button" className="flex gap-2 flex-col py-4 w-full text-left">
       <header className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 w-full">
-        <h2 className="text-2xl font-extralight truncate">{metadata.title}</h2>
+        <h2 className="text-2xl font-extralight truncate" title={metadata.title}>{metadata.title}</h2>
         <span className="font-mono text-sm text-muted-foreground mt-0.5 sm:mt-0">{project.releaseDate}</span>
       </header>
 
@@ -29,10 +29,9 @@ const Project = React.forwardRef<HTMLButtonElement, ProjectProps & React.ButtonH
       <footer className="flex flex-col sm:flex-row gap-3 sm:gap-2 w-full items-start sm:items-center justify-between">
         <ul className="flex flex-wrap gap-2 justify-start max-w-full">
           {project.tags.map((tag) => {
-            const iconComponent = getIconComponent(tag.iconKey);
             return (
-              <Badge key={tag.name} variant="muted" className="flex gap-2">
-                {iconComponent}
+              <Badge key={tag.name} variant="muted" className="flex gap-2" title={tag.name}>
+                {getIconComponent(tag.iconKey, true)}
                 <p className="text-sm truncate">{tag.name}</p>
               </Badge>
             );

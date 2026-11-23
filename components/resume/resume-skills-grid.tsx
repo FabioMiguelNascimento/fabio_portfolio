@@ -50,9 +50,12 @@ export function ResumeSkillsGrid() {
         return (
           <div
             key={name}
+            title={name}
             className="skill-item relative flex items-center justify-start gap-2 rounded-lg border bg-accent/50 p-2 text-sm transition-transform min-h-10 max-w-full"
           >
-          <span className="h-4 w-4 shrink-0 text-muted-foreground inline-flex items-center">{getIconComponent(name)}</span>
+            <span className="h-4 w-4 shrink-0 inline-flex items-center">
+              {getIconComponent(name, true)}
+            </span>
             <span className="truncate">{name}</span>
           </div>
         );

@@ -13,10 +13,10 @@ type HeroSkillsPopoverProps = {
 };
 
 const skills = [
-  { icon: SiTypescript, name: "Typescript" },
-  { icon: SiNestjs, name: "NestJS" },
-  { icon: SiReact, name: "ReactJS" },
-  { icon: SiNextdotjs, name: "NextJS" },
+  { icon: SiTypescript, name: "Typescript", color: "#3178C6" },
+  { icon: SiNestjs,     name: "NestJS",     color: "#E0234E" },
+  { icon: SiReact,      name: "ReactJS",    color: "#61DAFB" },
+  { icon: SiNextdotjs,  name: "NextJS",     color: "currentColor" },
 ];
 
 export function HeroSkillsPopover({
@@ -52,7 +52,7 @@ export function HeroSkillsPopover({
                   variant="outline"
                   className="text-accent-900 inline-flex items-center justify-center gap-2"
                 >
-                  <skill.icon size={16} /> {skill.name}
+                  <skill.icon size={16} style={{ color: skill.color }} /> {skill.name}
                 </Badge>
               </li>
             ))}

@@ -33,7 +33,7 @@ export function HeroButtons({
           size="sm"
           className="inline-flex gap-2 items-center justify-center"
         >
-          <HugeiconsIcon icon={Github01FreeIcons} /> GitHub
+          <HugeiconsIcon icon={Github01FreeIcons} color="#ffffff" /> GitHub
         </Button>
       </Link>
       <Link href="https://www.linkedin.com/in/fab-nascimento/" target="_blank">
@@ -42,7 +42,7 @@ export function HeroButtons({
           size="sm"
           className="inline-flex gap-2 items-center justify-center"
         >
-          <HugeiconsIcon icon={Linkedin01FreeIcons} /> LinkedIn
+          <HugeiconsIcon icon={Linkedin01FreeIcons} color="#0A66C2" /> LinkedIn
         </Button>
       </Link>
       <Link href="#contact">
