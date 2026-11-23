@@ -149,31 +149,38 @@ export default function StampsArea() {
         if (!pending || !canvasRect) return null
 
         const CUTOUT_SIZE = 72
+        const STAMP_RADIUS = CUTOUT_SIZE / 2  // 36px
         const WARNING_W = 260
-        const WARNING_H = 120
+        const WARNING_H = 136
         const GAP = 16
 
         const { width, height } = canvasRect
         const center = pending.clientPosition
 
-        const spaceRight = width - center.x
-        const spaceLeft = center.x
-        const spaceBottom = height - center.y
-        const spaceTop = center.y
+        const spaceRight = width - (center.x + STAMP_RADIUS)
+        const spaceLeft = center.x - STAMP_RADIUS
+        const spaceBottom = height - (center.y + STAMP_RADIUS)
+        const spaceTop = center.y - STAMP_RADIUS
 
-        let left = center.x + GAP
-        let top = center.y - WARNING_H / 2
+        let left: number
+        let top: number
 
-        if (spaceRight < WARNING_W + GAP && spaceLeft >= WARNING_W + GAP) {
-            left = center.x - WARNING_W - GAP
-        } else if (spaceRight < WARNING_W + GAP && spaceLeft < WARNING_W + GAP) {
-            if (spaceBottom >= WARNING_H + GAP) {
-                left = center.x - WARNING_W / 2
-                top = center.y + GAP
-            } else if (spaceTop >= WARNING_H + GAP) {
-                left = center.x - WARNING_W / 2
-                top = center.y - WARNING_H - GAP
-            }
+        if (spaceRight >= WARNING_W + GAP) {
+            // prefer right of stamp
+            left = center.x + STAMP_RADIUS + GAP
+            top = center.y - WARNING_H / 2
+        } else if (spaceLeft >= WARNING_W + GAP) {
+            // left of stamp
+            left = center.x - STAMP_RADIUS - GAP - WARNING_W
+            top = center.y - WARNING_H / 2
+        } else if (spaceBottom >= WARNING_H + GAP) {
+            // below stamp
+            left = center.x - WARNING_W / 2
+            top = center.y + STAMP_RADIUS + GAP
+        } else {
+            // above stamp
+            left = center.x - WARNING_W / 2
+            top = center.y - STAMP_RADIUS - GAP - WARNING_H
         }
 
         left = Math.max(12, Math.min(left, width - WARNING_W - 12))
