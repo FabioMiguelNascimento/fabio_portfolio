@@ -147,15 +147,20 @@ export function getIconComponent(iconKeyOrFriendly: string, colored = false): Re
   if (!iconKeyOrFriendly) return null
 
   const key = FRIENDLY_NAME_TO_KEY[iconKeyOrFriendly] ?? iconKeyOrFriendly
-  const color = colored ? (ICON_COLORS[key] ?? undefined) : undefined
+  const brandColor = ICON_COLORS[key]
+  // For colored mode: use brand color at 80% opacity for readability.
+  // Icons that are currentColor (GitHub, Next.js, Prisma, etc.) stay as-is.
+  const style: React.CSSProperties | undefined = colored && brandColor && brandColor !== "currentColor"
+    ? { color: brandColor, opacity: 0.8 }
+    : undefined
 
   if (REACT_ICONS[key]) {
     const Comp = REACT_ICONS[key] as IconType
-    return <Comp style={color ? { color } : undefined} />
+    return <Comp style={style} />
   }
 
   if (HUGEICONS[key]) {
-    return <HugeiconsIcon icon={HUGEICONS[key]} style={color ? { color } : undefined} />
+    return <HugeiconsIcon icon={HUGEICONS[key]} style={style} />
   }
 
   return null
