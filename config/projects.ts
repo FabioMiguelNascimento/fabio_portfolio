@@ -3,7 +3,8 @@ import { Project } from "@/components/projects/types";
 export const projects: Project[] = [
   {
     id: "portfolio",
-    image: "/images/projects/portfolio.webp",
+    image: "/images/projects/portfolio-thumb.webp",
+    imageFull: "/images/projects/portfolio.webp",
     releaseDate: "2025",
     tags: [
       { name: "React", iconKey: "SiReact" },
@@ -19,7 +20,8 @@ export const projects: Project[] = [
   },
   {
     id: "version_logger",
-    image: "/images/projects/ais-update.webp",
+    image: "/images/projects/ais-update-thumb.webp",
+    imageFull: "/images/projects/ais-update.webp",
     releaseDate: "2024",
     tags: [
       { name: "React", iconKey: "SiReact" },
@@ -33,7 +35,8 @@ export const projects: Project[] = [
   },
   {
     id: "bizzconnect",
-    image: "/images/projects/bizzconnect.webp",
+    image: "/images/projects/bizzconnect-thumb.webp",
+    imageFull: "/images/projects/bizzconnect.webp",
     releaseDate: "2026",
     tags: [
       { name: "Next.js", iconKey: "SiNextdotjs" },
@@ -48,24 +51,26 @@ export const projects: Project[] = [
     },
   },
   {
-    "id": "salva-contas",
-    "image": "/images/projects/salva-contas.webp",
-    "releaseDate": "2026",
-    "tags": [
-      { "name": "React", "iconKey": "SiReact" },
-      { "name": "TypeScript", "iconKey": "SiTypescript" },
-      { "name": "Tailwind CSS", "iconKey": "SiTailwindcss" },
-      { "name": "NestJs", "iconKey": "SiNestjs" },
-      { "name": "Artificial Intelligence", "iconKey": "AiOutlineRobot" },
+    id: "salva-contas",
+    image: "/images/projects/salva-contas-thumb.webp",
+    imageFull: "/images/projects/salva-contas.webp",
+    releaseDate: "2026",
+    tags: [
+      { name: "React", iconKey: "SiReact" },
+      { name: "TypeScript", iconKey: "SiTypescript" },
+      { name: "Tailwind CSS", iconKey: "SiTailwindcss" },
+      { name: "NestJs", iconKey: "SiNestjs" },
+      { name: "Artificial Intelligence", iconKey: "AiOutlineRobot" },
     ],
-    "links": {
-      "demo": "https://salva-contas.vercel.app/",
-      "repository": "https://github.com/FabioMiguelNascimento/salva-contas"
-    }
+    links: {
+      demo: "https://salva-contas.vercel.app/",
+      repository: "https://github.com/FabioMiguelNascimento/salva-contas",
+    },
   },
   {
     id: "weather_app",
-    image: "/images/projects/weather-app.webp",
+    image: "/images/projects/weather-app-thumb.webp",
+    imageFull: "/images/projects/weather-app.webp",
     releaseDate: "2024",
     tags: [
       { name: "React", iconKey: "SiReact" },
@@ -80,7 +85,8 @@ export const projects: Project[] = [
   },
   {
     id: "portfolio_maya",
-    image: "/images/projects/maya-portfolio.webp",
+    image: "/images/projects/maya-portfolio-thumb.webp",
+    imageFull: "/images/projects/maya-portfolio.webp",
     releaseDate: "2024",
     tags: [
       { name: "React", iconKey: "SiReact" },

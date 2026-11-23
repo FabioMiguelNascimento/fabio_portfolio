@@ -7,6 +7,7 @@ export interface Project {
   id: string;
   tags: Tag[];
   image: string;
+  imageFull?: string;
   releaseDate: string;
   links: {
     demo?: string;
