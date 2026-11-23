@@ -207,14 +207,6 @@
             "portfolio_maya": {
                 "title": "Portfolio Maya",
                 "description": "Portfolio profissional desenvolvido para minha esposa, apresentando seus trabalhos e experiências de forma elegante e responsiva."
-            },
-            "blog_platform": {
-                "title": "Blog Platform",
-                "description": "Plataforma de blog com editor rich text, sistema de comentários e painel do autor."
-            },
-            "dashboard_admin": {
-                "title": "Dashboard Admin",
-                "description": "Painel administrativo com visualização de dados em tempo real, gráficos interativos e gerenciamento de usuários."
             }
         }
     },

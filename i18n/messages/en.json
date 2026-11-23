@@ -207,14 +207,6 @@
             "portfolio_maya": {
                 "title": "Maya Portfolio",
                 "description": "Professional portfolio built for my wife, showcasing her work and experience elegantly and responsively."
-            },
-            "blog_platform": {
-                "title": "Blog Platform",
-                "description": "Blog platform with a rich text editor, comments system and author dashboard."
-            },
-            "dashboard_admin": {
-                "title": "Dashboard Admin",
-                "description": "Admin panel with real-time data visualization, interactive charts and user management."
             }
         }
     },

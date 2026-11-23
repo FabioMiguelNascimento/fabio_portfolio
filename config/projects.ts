@@ -99,34 +99,4 @@ export const projects: Project[] = [
       repository: "https://github.com/FabioMiguelNascimento/maya-portfolio",
     },
   },
-  {
-    id: "blog_platform",
-    image: "",
-    releaseDate: "2025",
-    tags: [
-      { name: "Next.js", iconKey: "SiNextdotjs" },
-      { name: "Prisma", iconKey: "SiPrisma" },
-      { name: "PostgreSQL", iconKey: "SiPostgresql" },
-      { name: "TailwindCSS", iconKey: "SiTailwindcss" },
-    ],
-    links: {
-      demo: "https://demo.com/blog",
-      repository: "https://github.com/user/blog",
-    },
-  },
-  {
-    id: "dashboard_admin",
-    image: "",
-    releaseDate: "2023",
-    tags: [
-      { name: "React", iconKey: "SiReact" },
-      { name: "Chart.js", iconKey: "SiChartdotjs" },
-      { name: "Firebase", iconKey: "SiFirebase" },
-      { name: "Material UI", iconKey: "SiMui" },
-    ],
-    links: {
-      demo: "https://demo.com/dashboard",
-      repository: "https://github.com/user/dashboard",
-    },
-  },
 ];
