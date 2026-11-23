@@ -91,7 +91,10 @@ export default function Navbar() {
                 {
                     name: currentLanguageShortLabel,
                     icon: locale === "en" ? "/icons/united-states.webp" : "/icons/brazil.webp",
-                    onClick: () => router.replace(pathname, { locale: nextLocale }),
+                    onClick: () => {
+                        const hash = typeof window !== "undefined" ? window.location.hash : ""
+                        router.replace(pathname + hash, { locale: nextLocale, scroll: false })
+                    },
                     srLabel: locale === "en" ? switchToPortugueseLabel : switchToEnglishLabel,
                 },
                 {
